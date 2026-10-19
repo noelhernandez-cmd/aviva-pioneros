@@ -2,8 +2,8 @@
 
 Dashboard interno para seguimiento comercial y operativo de los Pioneros de **Walmart, Sam's Club y Super Bodega Aurrera (SBA)**. Integra metas, ventas, productividad, cobertura de tiendas, Mesa de Riesgos, reconocimientos y análisis ejecutivo.
 
-**Sitio:** https://capacitacion-lgtm.github.io/dashboard-pioneros-insumos/  
-**Repositorio:** https://github.com/capacitacion-lgtm/dashboard-pioneros-insumos  
+**Sitio:** https://noelhernandez-cmd.github.io/aviva-pioneros/  
+**Repositorio:** https://github.com/noelhernandez-cmd/aviva-pioneros  
 **Última actualización de documentación:** 19 de octubre de 2026.
 
 > Herramienta interna de seguimiento. Las proyecciones son estimaciones basadas en los cortes disponibles y no equivalen a ventas de cierre definitivas.
