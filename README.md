@@ -165,3 +165,9 @@ Se contempla utilizar HubSpot como fuente de datos comerciales para solicitudes,
 Venta acumulada por formato: **Walmart MX$ 1,493,989 · SBA MX$ 1,955,300 · Sam's MX$ 700,100 · Total MX$ 4,149,389** (43 tiendas). Se cargó en `METRIC_MONTH_SALES_20261019`; las solicitudes se mantienen al último corte disponible. La fecha de corte de la Mesa de Riesgos y de la calculadora ya no se adelanta a los datos: si hoy es posterior al último corte, se usa el último corte disponible.
 
 **Solicitudes al 19/10 (HubSpot, deals de octubre):** 1,549 en 38 kioscos (Walmart 604 · SBA 737 · Sam's 208), cargadas en `METRIC_MONTH_REQUESTS_20261019`. Los kioscos SBA 0452, 0453, 0454, 0455 y 0456 no aparecen en el reporte de HubSpot; conservan su último dato disponible hasta confirmar su registro.
+
+## Mensajes de Mesa de Riesgos · comparativo diario (20/10/2026)
+
+Los botones **Copiar mensaje** del Plan de recuperación y del Plan de impulso comercial usan el **día en que se envía el mensaje** (no el día del corte) para elegir las recomendaciones, y abren con el comparativo contra el corte anterior: venta y solicitudes sumadas, y si la proyección mejoró, retrocedió o se mantuvo (en puntos porcentuales). El tono se ajusta si la persona está por encima del 100% o del 80%.
+
+Para que el comparativo funcione con cada corte nuevo, agregarlo al final de `METRIC_DAILY_CUTS_202610`.
