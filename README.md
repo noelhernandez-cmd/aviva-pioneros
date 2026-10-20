@@ -163,3 +163,5 @@ Se contempla utilizar HubSpot como fuente de datos comerciales para solicitudes,
 ## Corte comercial · 19 de octubre de 2026 (cierre del día)
 
 Venta acumulada por formato: **Walmart MX$ 1,493,989 · SBA MX$ 1,955,300 · Sam's MX$ 700,100 · Total MX$ 4,149,389** (43 tiendas). Se cargó en `METRIC_MONTH_SALES_20261019`; las solicitudes se mantienen al último corte disponible. La fecha de corte de la Mesa de Riesgos y de la calculadora ya no se adelanta a los datos: si hoy es posterior al último corte, se usa el último corte disponible.
+
+**Solicitudes al 19/10 (HubSpot, deals de octubre):** 1,549 en 38 kioscos (Walmart 604 · SBA 737 · Sam's 208), cargadas en `METRIC_MONTH_REQUESTS_20261019`. Los kioscos SBA 0452, 0453, 0454, 0455 y 0456 no aparecen en el reporte de HubSpot; conservan su último dato disponible hasta confirmar su registro.
