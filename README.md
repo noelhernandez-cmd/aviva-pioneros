@@ -152,7 +152,7 @@ Se contempla utilizar HubSpot como fuente de datos comerciales para solicitudes,
 **Metas asignadas (octubre 2026, asignadas por Noel):** 0444 Nicolás Romero Sam's MX$ 70,000 · 0446 Tulancingo Sam's MX$ 100,000 · 0391 Pachuca Sam's MX$ 60,000 · 0264 Plaza El Paseo Walmart MX$ 75,000 · 0365 San Martín Texmelucan Walmart MX$ 125,000 (antes MX$ 310,000).
 
 - **Meta formal:** sin cambio, **MX$ 4,690,000** (Walmart 1,730,000 · SBA 2,350,000 · Sam's 610,000).
-- **Meta ajustada (suma de metas por tienda):** pasa de MX$ 5,460,000 a **MX$ 5,580,000** (Walmart 2,030,000 · SBA 2,710,000 · Sam's 840,000).
+- **Meta ajustada (suma de metas por tienda):** **MX$ 5,480,000** (Walmart 2,030,000 · SBA 2,710,000 · Sam's 740,000). Santín (0443) queda sin meta por ser vacante.
 
 **Movimiento interno:** Miguel Vaquero Llanos pasó de 0365 Texmelucan a 0446 Tulancingo Sam's el 12/10/2026. Mijael Gonzalez Espinoza ingresó a 0365 Texmelucan el 12/10/2026.
 
