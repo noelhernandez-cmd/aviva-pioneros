@@ -171,3 +171,10 @@ Venta acumulada por formato: **Walmart MX$ 1,493,989 · SBA MX$ 1,955,300 · Sam
 Los botones **Copiar mensaje** del Plan de recuperación y del Plan de impulso comercial usan el **día en que se envía el mensaje** (no el día del corte) para elegir las recomendaciones, y abren con el comparativo contra el corte anterior: venta y solicitudes sumadas, y si la proyección mejoró, retrocedió o se mantuvo (en puntos porcentuales). El tono se ajusta si la persona está por encima del 100% o del 80%.
 
 Para que el comparativo funcione con cada corte nuevo, agregarlo al final de `METRIC_DAILY_CUTS_202610`.
+
+## Desempeño con historial e incentivos · 20/10/2026
+
+La vista **Desempeño** permite filtrar por formato y nivel (también tocando la tarjeta del nivel) y ordenar por proyección, % real, venta o incentivo estimado. Por promotor muestra agosto y septiembre (venta, % de meta e incentivo final, de los archivos de incentivos) y octubre (venta actual, meta, % real, proyección, nivel e incentivo estimado).
+
+- El historial está en `INCENTIVE_HISTORY_2026` y se asigna **por persona** (correo), aunque haya cambiado de kiosco. Correcciones manuales: 0411 → ana.dominguezr@, 0278 → joan.vazquez@, 0456 → amairani.guzman@. Las filas previas de 0264, 0265 (agosto), 0267, 0276 (agosto), 0365 y 0391 pertenecen a personas anteriores y no se atribuyen al pionero actual.
+- El esquema está en `INCENTIVE_SCHEME_2026`. El incentivo de octubre es una **estimación**: venta proyectada × % de bono (categoría y cumplimiento) × multiplicador de la última calidad (B si no hay historial), bloqueado si las solicitudes proyectadas no alcanzan el último candado. Usa la meta asignada completa y no incluye Power Up.
