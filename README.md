@@ -178,3 +178,7 @@ La vista **Desempeño** permite filtrar por formato y nivel (también tocando la
 
 - El historial está en `INCENTIVE_HISTORY_2026` y se asigna **por persona** (correo), aunque haya cambiado de kiosco. Correcciones manuales: 0411 → ana.dominguezr@, 0278 → joan.vazquez@, 0456 → amairani.guzman@. Las filas previas de 0264, 0265 (agosto), 0267, 0276 (agosto), 0365 y 0391 pertenecen a personas anteriores y no se atribuyen al pionero actual.
 - El esquema está en `INCENTIVE_SCHEME_2026`. El incentivo de octubre es una **estimación**: venta proyectada × % de bono (categoría y cumplimiento) × multiplicador de la última calidad (B si no hay historial), bloqueado si las solicitudes proyectadas no alcanzan el último candado. Usa la meta asignada completa y no incluye Power Up.
+
+## Power Up HoS · octubre 2026
+
+Tablero dentro de **Desempeño** para el reto de activación: 13 kioscos elegibles (debajo del 80% en septiembre) definidos en `POWERUP_HOS_202610`. Activación = kioscos con venta ≥80% de su meta de octubre ÷ 13; piso para competir 40% (6 kioscos); premio MX$ 12,500 para un solo HoS. Muestra activados al corte, activación proyectada, lo que falta para el 80% y el ritmo diario necesario. La evaluación oficial es al cierre del mes con datos de la empresa.
