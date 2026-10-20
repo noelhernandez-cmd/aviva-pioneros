@@ -159,3 +159,7 @@ Se contempla utilizar HubSpot como fuente de datos comerciales para solicitudes,
 - Para **seguimiento por persona** (calculadora, Mesa de Riesgos, reconocimientos), Miguel suma los **MX$ 91,600 y 34 solicitudes** de Texmelucan al corte del 11/10, con meta de mes completo. A Mijael se le descuentan esos montos del total de Texmelucan y su meta de MX$ 125,000 corre desde su ingreso.
 - Para **totales por formato y cumplimiento formal**, se conserva la venta real de cada tienda: los MX$ 91,600 siguen contando para Walmart.
 - La regla está en `OCT_PERSON_ATTRIBUTION_20261019` dentro de `index.html`.
+
+## Corte comercial · 19 de octubre de 2026 (cierre del día)
+
+Venta acumulada por formato: **Walmart MX$ 1,493,989 · SBA MX$ 1,955,300 · Sam's MX$ 700,100 · Total MX$ 4,149,389** (43 tiendas). Se cargó en `METRIC_MONTH_SALES_20261019`; las solicitudes se mantienen al último corte disponible. La fecha de corte de la Mesa de Riesgos y de la calculadora ya no se adelanta a los datos: si hoy es posterior al último corte, se usa el último corte disponible.
