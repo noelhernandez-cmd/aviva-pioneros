@@ -146,3 +146,16 @@ Se contempla utilizar HubSpot como fuente de datos comerciales para solicitudes,
 - Validar carga inicial, navegación, filtros, pestaña Vacantes y consistencia de totales después de cada despliegue.
 - Diferenciar claramente cortes confirmados, datos locales del navegador, proyecciones y ejemplos.
 - La actualización de este README **no modifica** el código del dashboard ni confirma que una funcionalidad nueva esté implementada.
+
+## Asignación de metas y movimiento interno · 19 de octubre de 2026
+
+**Metas asignadas (octubre 2026, asignadas por Noel):** 0444 Nicolás Romero Sam's MX$ 70,000 · 0446 Tulancingo Sam's MX$ 100,000 · 0391 Pachuca Sam's MX$ 60,000 · 0264 Plaza El Paseo Walmart MX$ 75,000 · 0365 San Martín Texmelucan Walmart MX$ 125,000 (antes MX$ 310,000).
+
+- **Meta formal:** sin cambio, **MX$ 4,690,000** (Walmart 1,730,000 · SBA 2,350,000 · Sam's 610,000).
+- **Meta ajustada (suma de metas por tienda):** pasa de MX$ 5,460,000 a **MX$ 5,580,000** (Walmart 2,030,000 · SBA 2,710,000 · Sam's 840,000).
+
+**Movimiento interno:** Miguel Vaquero Llanos pasó de 0365 Texmelucan a 0446 Tulancingo Sam's el 12/10/2026. Mijael Gonzalez Espinoza ingresó a 0365 Texmelucan el 12/10/2026.
+
+- Para **seguimiento por persona** (calculadora, Mesa de Riesgos, reconocimientos), Miguel suma los **MX$ 91,600 y 34 solicitudes** de Texmelucan al corte del 11/10, con meta de mes completo. A Mijael se le descuentan esos montos del total de Texmelucan y su meta de MX$ 125,000 corre desde su ingreso.
+- Para **totales por formato y cumplimiento formal**, se conserva la venta real de cada tienda: los MX$ 91,600 siguen contando para Walmart.
+- La regla está en `OCT_PERSON_ATTRIBUTION_20261019` dentro de `index.html`.
