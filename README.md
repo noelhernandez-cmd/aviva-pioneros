@@ -182,3 +182,7 @@ La vista **Desempeño** permite filtrar por formato y nivel (también tocando la
 ## Power Up HoS · octubre 2026
 
 Tablero dentro de **Desempeño** para el reto de activación: 10 kioscos elegibles (debajo del 80% en septiembre) definidos en `POWERUP_HOS_202610`; no participan 0391, 0264 y 0409 por bajas (los nuevos ingresos no entran). Activación = kioscos con venta ≥80% de su meta de octubre ÷ 10; piso para competir 40% (4 kioscos); premio MX$ 12,500 para un solo HoS. Muestra activados al corte, activación proyectada, lo que falta para el 80% y el ritmo diario necesario. La evaluación oficial es al cierre del mes con datos de la empresa.
+
+## Corte comercial · 20 de octubre de 2026 (cierre del día)
+
+Walmart MX$ 1,587,489 · SBA MX$ 2,062,487 · Sam's MX$ 765,100 · **Total MX$ 4,415,076**. Cargado en `METRIC_MONTH_SALES_20261020` y agregado a `METRIC_DAILY_CUTS_202610` y al historial de impacto semanal. Sin solicitudes nuevas en este corte (se conservan las del 19/10); los mensajes omiten la comparación de solicitudes cuando el corte no las trae.
