@@ -199,3 +199,5 @@ Walmart MX$ 1,659,489 · SBA MX$ 2,145,687 · Sam's MX$ 794,100 · **Total MX$ 4
 
 - Los botones (Descargar ficha PNG, Copiar mensaje, Enviado) quedan **fuera** del recuadro de la ficha, en ambas fichas: la imagen descargada termina en el mensaje de ánimo.
 - Bloque nuevo en el Plan de recuperación y el Plan de impulso comercial (`riskFunnelHTML`): **alcance de solicitudes** (real y proyectado vs. la meta mínima de solicitudes de la calculadora), **alcance de venta** (real y proyectado), **venta por solicitud** contra la esperada (ticket × % aprobación × % desembolso del formato) y **solicitudes necesarias para la meta $**, con una lectura del embudo: volumen, conversión, ambos o ninguno. Sin datos de aprobados por kiosco no se distingue entre aprobación y desembolso.
+
+**Tasas reales por formato (octubre, corte 21/10)** en `FORMAT_REAL_RATES_202610`: Walmart 37% aprobación · 72% desembolso · ticket MX$ 8,780; SBA 35% · 74% · MX$ 7,152; Sam's 52% · 72% · MX$ 8,726. La lectura del embudo de las fichas compara cada kiosco contra estas tasas reales; la calculadora conserva sus supuestos.
