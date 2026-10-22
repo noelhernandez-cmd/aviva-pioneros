@@ -194,3 +194,8 @@ Walmart MX$ 1,587,489 · SBA MX$ 2,062,487 · Sam's MX$ 765,100 · **Total MX$ 4
 Walmart MX$ 1,659,489 · SBA MX$ 2,145,687 · Sam's MX$ 794,100 · **Total MX$ 4,599,276**. Cargado en `METRIC_MONTH_SALES_20261021` (historial diario e impacto semanal incluidos). Sin solicitudes nuevas en este corte; se conservan las del 20/10.
 
 **Solicitudes al 21/10 (HubSpot):** 2,030 en 43 kioscos, en `METRIC_MONTH_REQUESTS_20261021`. Desde este corte el reporte incluye los kioscos SBA 0452–0456, que antes no venían en las capturas. El comparativo diario de solicitudes solo se muestra cuando el kiosco trae dato en ambos cortes.
+
+## Fichas de Mesa de Riesgos · embudo de solicitudes (22/10/2026)
+
+- Los botones (Descargar ficha PNG, Copiar mensaje, Enviado) quedan **fuera** del recuadro de la ficha, en ambas fichas: la imagen descargada termina en el mensaje de ánimo.
+- Bloque nuevo en el Plan de recuperación y el Plan de impulso comercial (`riskFunnelHTML`): **alcance de solicitudes** (real y proyectado vs. la meta mínima de solicitudes de la calculadora), **alcance de venta** (real y proyectado), **venta por solicitud** contra la esperada (ticket × % aprobación × % desembolso del formato) y **solicitudes necesarias para la meta $**, con una lectura del embudo: volumen, conversión, ambos o ninguno. Sin datos de aprobados por kiosco no se distingue entre aprobación y desembolso.
