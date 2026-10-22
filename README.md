@@ -205,3 +205,5 @@ Walmart MX$ 1,659,489 · SBA MX$ 2,145,687 · Sam's MX$ 794,100 · **Total MX$ 4
 ## Reconocimientos con fuerzas interiores y movimiento semanal (22/10/2026)
 
 Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam's · Disciplina) con símbolo, frase y una pose de Avi. Cada tarjeta muestra el movimiento contra los viernes anteriores (🔥 semanas consecutivas en el mismo lugar, ⬆ subió, «pasó del Xº al Yº», ↩ regresa, ✨ nuevo), calculado por persona con el corte disponible de cada jueves (`recognitionHistory`). La felicitación cambia según el lugar y el movimiento, e incluye la distancia al lugar de arriba o la ventaja sobre el 2º. Para solicitudes por día no hay historial semanal.
+
+**Rumbo al podio:** recuadro con 4º, 5º y 6º lugar por formato (`recognitionNextBox`), con la distancia al 3er lugar y un botón «Copiar impulso» con mensaje para cada uno.
