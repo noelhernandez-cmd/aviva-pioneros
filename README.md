@@ -188,3 +188,7 @@ Tablero dentro de **Desempeño** para el reto de activación: 10 kioscos elegibl
 Walmart MX$ 1,587,489 · SBA MX$ 2,062,487 · Sam's MX$ 765,100 · **Total MX$ 4,415,076**. Cargado en `METRIC_MONTH_SALES_20261020` y agregado a `METRIC_DAILY_CUTS_202610` y al historial de impacto semanal. Sin solicitudes nuevas en este corte (se conservan las del 19/10); los mensajes omiten la comparación de solicitudes cuando el corte no las trae.
 
 **Solicitudes al 20/10 (HubSpot):** 1,653 en 38 kioscos (Walmart 650 · SBA 779 · Sam's 224), en `METRIC_MONTH_REQUESTS_20261020`. Los 5 kioscos SBA que no aparecen en HubSpot (0452–0456) conservan su último dato.
+
+## Corte comercial · 21 de octubre de 2026 (cierre del día)
+
+Walmart MX$ 1,659,489 · SBA MX$ 2,145,687 · Sam's MX$ 794,100 · **Total MX$ 4,599,276**. Cargado en `METRIC_MONTH_SALES_20261021` (historial diario e impacto semanal incluidos). Sin solicitudes nuevas en este corte; se conservan las del 20/10.
