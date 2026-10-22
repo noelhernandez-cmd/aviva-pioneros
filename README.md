@@ -192,3 +192,5 @@ Walmart MX$ 1,587,489 · SBA MX$ 2,062,487 · Sam's MX$ 765,100 · **Total MX$ 4
 ## Corte comercial · 21 de octubre de 2026 (cierre del día)
 
 Walmart MX$ 1,659,489 · SBA MX$ 2,145,687 · Sam's MX$ 794,100 · **Total MX$ 4,599,276**. Cargado en `METRIC_MONTH_SALES_20261021` (historial diario e impacto semanal incluidos). Sin solicitudes nuevas en este corte; se conservan las del 20/10.
+
+**Solicitudes al 21/10 (HubSpot):** 1,731 en 38 kioscos, en `METRIC_MONTH_REQUESTS_20261021`.
