@@ -105,6 +105,33 @@ La aplicación se sirve desde GitHub Pages y contiene lógica del dashboard en `
 - [ ] Confirmar al cierre del mes los resultados reales e historias de éxito.
 - [ ] Validar la visualización pública tras cada despliegue.
 
+## Regla de actualización de cortes · checklist obligatoria
+
+**Cada vez que llegue información nueva (ventas, solicitudes o tasas), se actualizan TODOS los campos vinculados en el mismo cambio.** Ningún corte se considera cargado hasta completar esta lista.
+
+### Corte de ventas (`METRIC_MONTH_SALES_AAAAMMDD`)
+1. Crear el objeto del corte con la venta acumulada por kiosco (`Formato|Kiosco`).
+2. Sumarlo al acumulado del mes que alimenta `disbActual` (`METRIC_MONTH_SALES_20261016_ALL`); el corte anterior conserva su propio acumulado.
+3. Agregarlo a `METRIC_DAILY_CUTS_AAAAMM` (comparativo diario de los mensajes de Mesa de Riesgos).
+4. Agregarlo a `riskSalesRegistry()` (rachas, historial semanal y Reconocimientos).
+5. Agregarlo al borrador de AVIVA BRAIN y actualizar sus etiquetas de “avance al DD/MM”.
+6. Mover la fecha de corte por defecto en `calcProjectionDefault()`; el tablero siempre abre en el corte más reciente.
+7. Revisar movimientos internos con atribución por persona (p. ej. Texmelucan → Tulancingo).
+
+### Corte de solicitudes (`METRIC_MONTH_REQUESTS_AAAAMMDD`)
+1. Crear el objeto con las solicitudes acumuladas por kiosco.
+2. Ponerlo primero en la cadena de prioridad de `reqActual` y en la lista de llaves del mes.
+3. Agregarlo a los cortes diarios (`reqSrc` y acumulado de solicitudes del día).
+
+### Tasas reales por formato (`FORMAT_REAL_RATES_AAAAMM`)
+Actualizar solicitudes, aprobación, desembolso, ticket y fecha de corte cuando llegue un nuevo reporte global.
+
+### Verificación antes de publicar
+- Totales por formato contra la captura recibida.
+- Días hábiles transcurridos y restantes (se trabaja de lunes a domingo, excepto jueves).
+- Una tarjeta de Mesa de Riesgos de muestra, Desempeño, Reconocimientos y Power Up HoS con la fecha nueva.
+- Publicar en GitHub Pages y confirmar que el build corresponde al último commit.
+
 ## Desarrollo y publicación
 
 La rama `main` alimenta el sitio de GitHub Pages. Los cambios pueden tardar unos minutos en publicarse. Para revisar una actualización, abrir el sitio y, si es necesario, forzar recarga del navegador.
@@ -207,3 +234,9 @@ Walmart MX$ 1,659,489 · SBA MX$ 2,145,687 · Sam's MX$ 794,100 · **Total MX$ 4
 Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam's · Disciplina) con símbolo, frase y una pose de Avi. Cada tarjeta muestra el movimiento contra los viernes anteriores (🔥 semanas consecutivas en el mismo lugar, ⬆ subió, «pasó del Xº al Yº», ↩ regresa, ✨ nuevo), calculado por persona con el corte disponible de cada jueves (`recognitionHistory`). La felicitación cambia según el lugar y el movimiento, e incluye la distancia al lugar de arriba o la ventaja sobre el 2º. Para solicitudes por día no hay historial semanal.
 
 **Rumbo al podio:** recuadro con 4º, 5º y 6º lugar por formato (`recognitionNextBox`), con la distancia al 3er lugar y un botón «Copiar impulso» con mensaje para cada uno.
+
+## Corte comercial · 23 de octubre de 2026 (cierre del día)
+
+- Ventas: total $4,785,626 (WM $1,749,089 · SBA $2,212,437 · Sam’s $824,100). El 22/10 fue jueves de descanso.
+- Solicitudes: 2,131 (WM 721 · SBA 1,152 · Sam’s 258).
+- Corrección: la fecha de corte guardada en el navegador ya no deja la Mesa de Riesgos en un corte anterior; siempre abre en el más reciente.
