@@ -253,3 +253,8 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - Primer bloque de la pestaña 07: una línea por ola de apertura (tiendas que abrieron el mismo mes) y eje X en meses de vida (Mes 1, Mes 2…), con filtro por formato.
 - Se grafica la venta promedio por tienda de cada ola, no el total. Mes 1 = primer mes con colocación de cada tienda. El mes en curso va proyectado al cierre (línea punteada).
 - Línea de referencia: meta promedio por tienda del formato en el mes vigente. Olas definidas por el mes de apertura de la hoja de Comercial (`BRAIN_WAVE_OPENING`).
+
+## Corte comercial · 24 de octubre de 2026 (cierre del sábado)
+
+- Ventas: total $5,055,316 (WM $1,869,679 · SBA $2,319,537 · Sam’s $866,100). Solicitudes se mantienen al 23/10.
+- Actualizados con la checklist: acumulado del mes, cortes diarios, registro de ventas, AVIVA BRAIN, olas, Distribución y fecha de corte por defecto (24/10, día hábil 20 de 26).
