@@ -247,3 +247,9 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - Gráfica circular por categoría de población, filtrable por formato; concentración y ritmo por estado; comparativo capital estatal o su zona metropolitana / conurbado de CDMX / resto; “Mismo contexto, distinto resultado”; tabla por kiosco.
 - Promedio mensual = venta desde el primer mes con colocación ÷ meses activos. Ritmo maduro = promedio sin el mes de apertura, con el mes en curso proyectado. Venta por tienda, no por persona. Los kioscos vacantes no entran en promedios.
 - Correcciones aplicadas en la pestaña: Tlalnepantla (0454) y Teotihuacán (0456) se asignan al Estado de México. Observaciones pendientes de validar en la hoja: Tlaxcala, Nichupte, Chimalhuacán y Forjadores.
+
+## AVIVA BRAIN · Comportamiento por ola (24/10/2026)
+
+- Primer bloque de la pestaña 07: una línea por ola de apertura (tiendas que abrieron el mismo mes) y eje X en meses de vida (Mes 1, Mes 2…), con filtro por formato.
+- Se grafica la venta promedio por tienda de cada ola, no el total. Mes 1 = primer mes con colocación de cada tienda. El mes en curso va proyectado al cierre (línea punteada).
+- Línea de referencia: meta promedio por tienda del formato en el mes vigente. Olas definidas por el mes de apertura de la hoja de Comercial (`BRAIN_WAVE_OPENING`).
