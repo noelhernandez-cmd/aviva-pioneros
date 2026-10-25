@@ -240,3 +240,10 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - Ventas: total $4,785,626 (WM $1,749,089 · SBA $2,212,437 · Sam’s $824,100). El 22/10 fue jueves de descanso.
 - Solicitudes: 2,131 (WM 721 · SBA 1,152 · Sam’s 258).
 - Corrección: la fecha de corte guardada en el navegador ya no deja la Mesa de Riesgos en un corte anterior; siempre abre en el más reciente.
+
+## 10 · Distribución (24/10/2026)
+
+- Nueva pestaña con la clasificación territorial de los 46 kioscos (hoja de Comercial “Hoja 67”, columna *Categoria Población*).
+- Gráfica circular por categoría de población, filtrable por formato; concentración y ritmo por estado; comparativo capital estatal o su zona metropolitana / conurbado de CDMX / resto; “Mismo contexto, distinto resultado”; tabla por kiosco.
+- Promedio mensual = venta desde el primer mes con colocación ÷ meses activos. Ritmo maduro = promedio sin el mes de apertura, con el mes en curso proyectado. Venta por tienda, no por persona. Los kioscos vacantes no entran en promedios.
+- Correcciones aplicadas en la pestaña: Tlalnepantla (0454) y Teotihuacán (0456) se asignan al Estado de México. Observaciones pendientes de validar en la hoja: Tlaxcala, Nichupte, Chimalhuacán y Forjadores.
