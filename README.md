@@ -259,3 +259,10 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - Ventas: total $5,055,316 (WM $1,869,679 · SBA $2,319,537 · Sam’s $866,100).
 - Solicitudes: 2,237 (WM 752 · SBA 1,208 · Sam’s 277).
 - Actualizados con la checklist: acumulado del mes, cortes diarios, registro de ventas, AVIVA BRAIN, olas, Distribución y fecha de corte por defecto (24/10, día hábil 20 de 26).
+
+## Corte comercial · 25 de octubre de 2026 (cierre del domingo)
+
+- Fuente: Excel `Ventas_y_solicitudes_octubre_2026.xlsx` (pestaña Consolidado, validada contra las pestañas por formato y la de solicitudes).
+- Ventas: total $5,332,715 (WM $1,911,779 · SBA $2,485,336 · Sam’s $935,600).
+- Solicitudes: 2,384 (WM 790 · SBA 1,297 · Sam’s 297).
+- Día hábil 21 de 26.
