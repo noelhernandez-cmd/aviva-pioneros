@@ -288,3 +288,10 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - Unifica "Comportamiento por ola" y "Tendencia de colocación" en un solo panel. La Tendencia anterior queda oculta (`#brainTrendLegacy`) sin borrar su código.
 - Indicadores de colocación acumulada (total y por formato). Filtros: formato (Todos, Walmart, SBA, Sam’s), vista (por mes de vida/olas o por mes calendario), métrica en calendario (promedio por tienda, colocación total, variación mes a mes) y tienda.
 - Con una tienda seleccionada: en olas, la tienda contra el promedio de su ola; en calendario, la tienda contra el promedio por tienda de su formato. El mes en curso va proyectado al cierre.
+
+## Meta de referencia por tienda y simplificación de AVIVA BRAIN (26/10/2026)
+
+- Meta de referencia mensual por tienda (`BRAIN_META_REF`): Walmart $125,000 · SBA $120,000 · Sam’s $100,000.
+- Desglose por tienda: montos en verde Aviva; en lugar de la variación contra el mes anterior, muestra el % de cumplimiento contra la meta de referencia (azul ≥100%, naranja 80–99%, rojo <80%). El mes en curso usa la proyección al cierre; los meses previos a la apertura se muestran como “—”.
+- Desarrollo y crecimiento del canal: la línea punteada es la meta de referencia; métricas en calendario: promedio por tienda, colocación total, tiendas con venta y cumplimiento vs meta. Las tablas de tienda muestran % de la meta.
+- “Tiendas y productividad mensual” queda oculto (`#brainBarsLegacy`): su información está en el panel unificado.
