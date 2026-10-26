@@ -276,3 +276,9 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - Cada tarjeta muestra aprobación, desembolso, aprobados sin desembolsar y monto promedio contra su formato, más la principal palanca (y una segunda cuando también pesa).
 - Palancas: solicitudes, aprobación, desembolso y monto; se elige la que más venta sumaría en los días hábiles restantes con la conversión real de la tienda. Solicitudes va primero si el ritmo es menor al 60% de la meta, salvo que otra palanca valga más del doble.
 - El mensaje copiado incluye el embudo y la palanca de la tienda.
+
+## AVIVA BRAIN · Resumen mensual por tienda (26/10/2026)
+
+- Panel con filtros de mes, formato y tienda. Todas las tiendas: tabla del mes ordenable y fila de totales. Una tienda: historial mes a mes y promedio histórico (la venta promedio usa solo meses cerrados).
+- Columnas: productividad (solicitudes por día hábil), % aprobación, aprobados, % desembolso (créditos ÷ aprobados), créditos, monto promedio (venta ÷ créditos) y venta por tienda.
+- El embudo existe desde octubre 2026 (`STORE_FUNNEL_202610`). Al cierre de cada mes, agregar su snapshot en `brainFunnelByMonth()`; los meses anteriores muestran solo venta.
