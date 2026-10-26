@@ -282,3 +282,9 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - Panel con filtros de mes, formato y tienda. Todas las tiendas: tabla del mes ordenable y fila de totales. Una tienda: historial mes a mes y promedio histórico (la venta promedio usa solo meses cerrados).
 - Columnas: productividad (solicitudes por día hábil), % aprobación, aprobados, % desembolso (créditos ÷ aprobados), créditos, monto promedio (venta ÷ créditos) y venta por tienda.
 - El embudo existe desde octubre 2026 (`STORE_FUNNEL_202610`). Al cierre de cada mes, agregar su snapshot en `brainFunnelByMonth()`; los meses anteriores muestran solo venta.
+
+## AVIVA BRAIN · Desarrollo y crecimiento del canal (26/10/2026)
+
+- Unifica "Comportamiento por ola" y "Tendencia de colocación" en un solo panel. La Tendencia anterior queda oculta (`#brainTrendLegacy`) sin borrar su código.
+- Indicadores de colocación acumulada (total y por formato). Filtros: formato (Todos, Walmart, SBA, Sam’s), vista (por mes de vida/olas o por mes calendario), métrica en calendario (promedio por tienda, colocación total, variación mes a mes) y tienda.
+- Con una tienda seleccionada: en olas, la tienda contra el promedio de su ola; en calendario, la tienda contra el promedio por tienda de su formato. El mes en curso va proyectado al cierre.
