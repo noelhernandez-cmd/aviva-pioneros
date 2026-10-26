@@ -123,6 +123,9 @@ La aplicación se sirve desde GitHub Pages y contiene lógica del dashboard en `
 2. Ponerlo primero en la cadena de prioridad de `reqActual` y en la lista de llaves del mes.
 3. Agregarlo a los cortes diarios (`reqSrc` y acumulado de solicitudes del día).
 
+### Embudo por tienda (`STORE_FUNNEL_AAAAMM`)
+Con cada archivo de kioscos (aprobación, aprobados, créditos, venta por tienda): actualizar `rows` y `cut`. El % de desembolso se calcula como créditos ÷ aprobados y el monto promedio como venta ÷ créditos; validar contra el corte de ventas del mismo día.
+
 ### Tasas reales por formato (`FORMAT_REAL_RATES_AAAAMM`)
 Actualizar solicitudes, aprobación, desembolso, ticket y fecha de corte cuando llegue un nuevo reporte global.
 
@@ -266,3 +269,10 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - Ventas: total $5,332,715 (WM $1,911,779 · SBA $2,485,336 · Sam’s $935,600).
 - Solicitudes: 2,384 (WM 790 · SBA 1,297 · Sam’s 297).
 - Día hábil 21 de 26.
+
+## Embudo por tienda en Mesa de Riesgos y Plan de impulso (26/10/2026)
+
+- Fuente: `Kioscos_WM_SBA_SAMS.xlsx` al 25/10 (aprobación, aprobados, créditos y venta por tienda). La columna “% desembolso” del archivo no era consistente; se calcula como créditos ÷ aprobados.
+- Cada tarjeta muestra aprobación, desembolso, aprobados sin desembolsar y monto promedio contra su formato, más la principal palanca (y una segunda cuando también pesa).
+- Palancas: solicitudes, aprobación, desembolso y monto; se elige la que más venta sumaría en los días hábiles restantes con la conversión real de la tienda. Solicitudes va primero si el ritmo es menor al 60% de la meta, salvo que otra palanca valga más del doble.
+- El mensaje copiado incluye el embudo y la palanca de la tienda.
