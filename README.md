@@ -311,3 +311,7 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - Fuente: `Ventas_y_solicitudes_octubre_2026_con_Los_Pinos.xlsx` (una pestaña sin columna de formato; formato asignado desde el catálogo; Los Pinos 0408 venía en una fila sin número de kiosco).
 - Ventas: $5,540,215 (WM $1,983,779 · SBA $2,565,836 · Sam’s $990,600). Solicitudes: 2,512 por tienda (el archivo señala 2,506 en la imagen original; se usan las cifras por tienda).
 - Día hábil 23 de 26. El embudo del 25/10 deja de mostrarse en tarjetas y mensajes.
+
+## Coberturas (27/10/2026)
+
+- Hospital General (0409): cubierta por Edgard Ramírez Carrillo desde el 21/10. Jiutepec (0407): cubierta desde el 26/10 (nombre del pionero pendiente). Dejan de aparecer como vacantes en Meta Global, Vacantes y el comunicado; su meta de octubre se mantiene en $0 por ingresar en la última semana del mes.
