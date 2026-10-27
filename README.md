@@ -305,3 +305,9 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - Evolución semanal: “Ingresó a la Mesa” es la primera fecha en que la proyección quedó debajo del 80%; “Salió” la primera en que volvió a ≥80%; “Tardó” en días hábiles; “Ingresos” cuenta las veces que entró a la zona en el mes. Una entrada o salida se confirma solo si se sostiene dos cortes seguidos (salvo el último corte). Filtros: pasaron por la Mesa, reingresaron, siguen en la Mesa; orden por recuperación más rápida o más ingresos.
 
 - Cierre de semana: la fecha límite y las rutas de la tarjeta usan el día real del cierre de semana (domingo, o el último día del mes si cae antes; p. ej. sábado 31 de octubre).
+
+## Corte comercial · 27 de octubre de 2026 (cierre del martes; incluye lunes 26)
+
+- Fuente: `Ventas_y_solicitudes_octubre_2026_con_Los_Pinos.xlsx` (una pestaña sin columna de formato; formato asignado desde el catálogo; Los Pinos 0408 venía en una fila sin número de kiosco).
+- Ventas: $5,540,215 (WM $1,983,779 · SBA $2,565,836 · Sam’s $990,600). Solicitudes: 2,512 por tienda (el archivo señala 2,506 en la imagen original; se usan las cifras por tienda).
+- Día hábil 23 de 26. El embudo del 25/10 deja de mostrarse en tarjetas y mensajes.
