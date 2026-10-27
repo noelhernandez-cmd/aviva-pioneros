@@ -124,6 +124,7 @@ La aplicación se sirve desde GitHub Pages y contiene lógica del dashboard en `
 3. Agregarlo a los cortes diarios (`reqSrc` y acumulado de solicitudes del día).
 
 ### Embudo por tienda (`STORE_FUNNEL_AAAAMM`)
+**Cadencia:** el embudo solo se integra en momentos clave: dos empujes a mitad de mes (Noel lo comparte un jueves por la noche para los mensajes del viernes; p. ej. en noviembre los jueves 12 y 19/20) y el cierre del último día del mes. La tarjeta y el mensaje muestran el embudo **solo cuando su `cut` coincide con la fecha de corte de ventas vigente**; con el siguiente corte diario desaparece solo. El snapshot del último día del mes se guarda en `brainFunnelByMonth()` como cierre del mes para AVIVA BRAIN.
 Con cada archivo de kioscos (aprobación, aprobados, créditos, venta por tienda): actualizar `rows` y `cut`. El % de desembolso se calcula como créditos ÷ aprobados y el monto promedio como venta ÷ créditos; validar contra el corte de ventas del mismo día.
 
 ### Tasas reales por formato (`FORMAT_REAL_RATES_AAAAMM`)
@@ -302,3 +303,5 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - Resultados de recuperación: “Evolución semanal por tienda” reemplaza el Impacto semanal (oculto en `#riskWeeklyExecutive`). Tienda, ingreso, proyección inicial (primer corte del mes con ≥3 días hábiles del pionero actual), proyección por semana, cambio en pp y semana clave. Filtros: formato, orden (mejora, caída, proyección) y mostrar (todas, iniciaron <80%, hoy <80%, bajaron).
 - Reconocimientos · Comunicado semanal: con un formato y el criterio “Colocación” genera el Lunes de Colocación; con “Colocación promedio por día”, el Miércoles de Productividad. Podio + todas las tiendas, en colores por proyección contra su meta (verde ≥100%, naranja 80–99%, rojo <80%), vacantes al final. Descarga PNG y mensaje estandarizado para Slack (semana vs. semana anterior, podio, los que más colocaron, los que escalaron, a acelerar, sin movimiento, sin desembolsos y vacantes). Reemplaza los playbooks externos.
 - Evolución semanal: “Ingresó a la Mesa” es la primera fecha en que la proyección quedó debajo del 80%; “Salió” la primera en que volvió a ≥80%; “Tardó” en días hábiles; “Ingresos” cuenta las veces que entró a la zona en el mes. Una entrada o salida se confirma solo si se sostiene dos cortes seguidos (salvo el último corte). Filtros: pasaron por la Mesa, reingresaron, siguen en la Mesa; orden por recuperación más rápida o más ingresos.
+
+- Cierre de semana: la fecha límite y las rutas de la tarjeta usan el día real del cierre de semana (domingo, o el último día del mes si cae antes; p. ej. sábado 31 de octubre).
