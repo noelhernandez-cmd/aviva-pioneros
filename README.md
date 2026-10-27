@@ -315,4 +315,4 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 ## Coberturas (27/10/2026)
 
 - Hospital General (0409): cubierta por Edgard Ramírez Carrillo desde el 21/10. Jiutepec (0407): cubierta desde el 26/10 (nombre del pionero pendiente). Dejan de aparecer como vacantes en Meta Global, Vacantes y el comunicado; su meta de octubre se mantiene en $0 por ingresar en la última semana del mes.
-- La Cruz (0450) y Santín (0443): onboarding desde el 28/10, en tienda el domingo 01/11 con mes completo. En octubre siguen como vacantes (meta $0); desde noviembre se consideran cubiertas (`coverageOverrides` con `startDate: 2026-11-01`). Nombre del pionero de Santín pendiente; La Cruz con Luis Alonso Velázquez Gómez.
+- La Cruz (0450) y Santín (0443): onboarding desde el 28/10, en tienda el domingo 01/11 con mes completo. En octubre siguen como vacantes (meta $0); desde noviembre se consideran cubiertas (`coverageOverrides` con `startDate: 2026-11-01`). Pioneros: Jiutepec (0407) Pedro Manuel Morales Flores · Santín (0443) Salvador Curiel Salero · La Cruz (0450) Marisol Ruiz Encino.
