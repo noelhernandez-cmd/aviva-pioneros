@@ -306,13 +306,13 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 
 - Cierre de semana: la fecha límite y las rutas de la tarjeta usan el día real del cierre de semana (domingo, o el último día del mes si cae antes; p. ej. sábado 31 de octubre).
 
-## Corte comercial · 27 de octubre de 2026 (cierre del martes; incluye lunes 26)
+## Corte comercial · 26 de octubre de 2026 (cierre del lunes)
 
 - Fuente: `Ventas_y_solicitudes_octubre_2026_con_Los_Pinos.xlsx` (una pestaña sin columna de formato; formato asignado desde el catálogo; Los Pinos 0408 venía en una fila sin número de kiosco).
 - Ventas: $5,540,215 (WM $1,983,779 · SBA $2,565,836 · Sam’s $990,600). Solicitudes: 2,512 por tienda (el archivo señala 2,506 en la imagen original; se usan las cifras por tienda).
-- Día hábil 23 de 26. El embudo del 25/10 deja de mostrarse en tarjetas y mensajes.
+- Día hábil 22 de 26 (restan 27, 28, 30 y 31; el 29 es jueves de descanso). El embudo del 25/10 deja de mostrarse en tarjetas y mensajes.
 
-## Coberturas (27/10/2026)
+## Coberturas (corte 26/10, actualizado 27/10/2026)
 
 - Hospital General (0409): cubierta por Edgard Ramírez Carrillo desde el 21/10. Jiutepec (0407): cubierta desde el 26/10 (nombre del pionero pendiente). Dejan de aparecer como vacantes en Meta Global, Vacantes y el comunicado; su meta de octubre se mantiene en $0 por ingresar en la última semana del mes.
-- La Cruz (0450) y Santín (0443): onboarding desde el 28/10, en tienda el domingo 01/11 con mes completo. En octubre siguen como vacantes (meta $0); desde noviembre se consideran cubiertas (`coverageOverrides` con `startDate: 2026-11-01`). Pioneros: Jiutepec (0407) Pedro Manuel Morales Flores · Santín (0443) Salvador Curiel Salero · La Cruz (0450) Marisol Ruiz Encino.
+- La Cruz (0450) y Santín (0443): onboarding desde el 27/10, en tienda el domingo 01/11 con mes completo. En octubre siguen como vacantes (meta $0); desde noviembre se consideran cubiertas (`coverageOverrides` con `startDate: 2026-11-01`). Pioneros: Jiutepec (0407) Pedro Manuel Morales Flores · Santín (0443) Salvador Curiel Salero · La Cruz (0450) Marisol Ruiz Encino.
