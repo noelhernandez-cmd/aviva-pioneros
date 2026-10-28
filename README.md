@@ -316,3 +316,8 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 
 - Hospital General (0409): cubierta por Edgard Ramírez Carrillo desde el 21/10. Jiutepec (0407): cubierta desde el 26/10 (nombre del pionero pendiente). Dejan de aparecer como vacantes en Meta Global, Vacantes y el comunicado; su meta de octubre se mantiene en $0 por ingresar en la última semana del mes.
 - La Cruz (0450) y Santín (0443): onboarding desde el 27/10, en tienda el domingo 01/11 con mes completo. En octubre siguen como vacantes (meta $0); desde noviembre se consideran cubiertas (`coverageOverrides` con `startDate: 2026-11-01`). Pioneros: Jiutepec (0407) Pedro Manuel Morales Flores · Santín (0443) Salvador Curiel Salero · La Cruz (0450) Marisol Ruiz Encino.
+
+## Corte comercial · 27 de octubre de 2026 (cierre del martes)
+
+- Fuente: `Ventas_solicitudes_octubre_2026_actualizado.xlsx`. Ventas $5,737,995 (WM $2,051,779 · SBA $2,674,616 · Sam’s $1,011,600). Solicitudes 2,589: Jorobas (0449) venía en 104, menor al corte previo (109); se mantiene 109, lo que explica la diferencia con el total reportado (2,590). Jiutepec (0407) se integra con 1 solicitud y $0.
+- Día hábil 23 de 26 (restan 28, 30 y 31). Se supera el 120% de la meta formal.
