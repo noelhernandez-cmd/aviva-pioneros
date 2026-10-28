@@ -329,5 +329,5 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 
 ## Comunicados: Miércoles de Productividad por solicitudes (28/10/2026)
 
-- “Productividad promedio por día” (solicitudes por día hábil) genera el Miércoles de Productividad; los colores comparan contra la meta diaria del formato (4 en Walmart y SBA, 3 en Sam’s). “Colocación promedio por día” genera el Ritmo de Colocación.
+- “Productividad promedio por día” (solicitudes por día hábil) genera el Miércoles de Productividad; colores por solicitudes al día en los tres formatos: verde más de 3, naranja de 2.1 a 3, rojo 2 o menos. “Colocación promedio por día” genera el Ritmo de Colocación.
 - La mejora semanal de solicitudes compara con base de tienda en ambos momentos (evita mezclar la atribución por persona).
