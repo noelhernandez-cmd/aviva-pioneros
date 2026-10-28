@@ -326,3 +326,8 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 
 - Todos los kioscos abrieron en 2026, salvo Chalco (0023), abierto en mayo de 2024 (`BRAIN_MATURE_STORES`). Chalco no entra al análisis por olas; en Distribución su ritmo no descuenta un mes de apertura.
 - Río Blanco (0279) y Plaza Romos (0441) se consideran de abril de 2026 porque ya colocaban desde ese mes (la hoja de Comercial indica julio y agosto; pendiente de corregir allá).
+
+## Comunicados: Miércoles de Productividad por solicitudes (28/10/2026)
+
+- “Productividad promedio por día” (solicitudes por día hábil) genera el Miércoles de Productividad; los colores comparan contra la meta diaria del formato (4 en Walmart y SBA, 3 en Sam’s). “Colocación promedio por día” genera el Ritmo de Colocación.
+- La mejora semanal de solicitudes compara con base de tienda en ambos momentos (evita mezclar la atribución por persona).
