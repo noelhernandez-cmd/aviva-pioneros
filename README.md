@@ -321,3 +321,8 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 
 - Fuente: `Ventas_solicitudes_octubre_2026_actualizado.xlsx`. Ventas $5,737,995 (WM $2,051,779 · SBA $2,674,616 · Sam’s $1,011,600). Solicitudes 2,589: Jorobas (0449) venía en 104, menor al corte previo (109); se mantiene 109, lo que explica la diferencia con el total reportado (2,590). Jiutepec (0407) se integra con 1 solicitud y $0.
 - Día hábil 23 de 26 (restan 28, 30 y 31). Se supera el 120% de la meta formal.
+
+## Kioscos maduros (28/10/2026)
+
+- Todos los kioscos abrieron en 2026, salvo Chalco (0023), abierto en mayo de 2024 (`BRAIN_MATURE_STORES`). Chalco no entra al análisis por olas; en Distribución su ritmo no descuenta un mes de apertura.
+- Río Blanco (0279) y Plaza Romos (0441) se consideran de abril de 2026 porque ya colocaban desde ese mes (la hoja de Comercial indica julio y agosto; pendiente de corregir allá).
