@@ -351,3 +351,9 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - Una sola gráfica: “Día típico de la semana” (promedio de todos los días observados, acumulado entre meses), con filtros de métrica, formato, tienda y Sin EFI / Con EFI. Las fechas del EFI se registran en `EFI_PERIODS` (pendientes). Lectura rápida y tabla con meta diaria (kioscos × 4 en WM/SBA, × 3 en Sam’s; colocación = metas ÷ 26). No hay datos por hora.
 - Desarrollo y crecimiento del canal: con una tienda seleccionada, la línea se divide por pionero (naranja = anterior, verde Aviva = actual) en ambas vistas, usando `brainPioneerChange()` (misma regla que la lectura rápida: movimientos + catálogo + fecha de reemplazo).
 - Ventas por mes y tienda: al pasar el cursor por un bloque, la tienda se resalta en la barra y aparece fija arriba del desglose (monto, % del mes y lugar), además de marcarse en negritas en la lista. Con una tienda seleccionada, las barras usan naranja (pionero anterior) y verde Aviva (actual) con `brainPioneerChange()`.
+
+## Desempeño · Matriz de desempeño (29/10/2026)
+
+- Calidad de cartera por kiosco desde los archivos de incentivos (`QUALITY_HISTORY_2026`: FPD, % pagos completados, calificación A–D y multiplicador, agosto y septiembre). Actualizar con cada archivo mensual de incentivos.
+- Matriz: colocación (proyección del mes vs. meta) contra calidad (FPD; corte 5%, escala raíz para abrir el rango bajo), tamaño = solicitudes por día. Cuadrantes: Referentes, Riesgo de cartera, Cuidadosos, Atención prioritaria y Sin calidad medible (sin FPD o <50% de pagos completados).
+- Puntaje integral: 40% colocación (tope 150%), 40% calidad (100 − FPD×1,000), 20% productividad (tope 1.5× meta diaria). La calidad es por tienda: puede reflejar al pionero anterior si hubo cambio.
