@@ -337,3 +337,9 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - Fuente: `Corte_28_octubre_2026_ventas_solicitudes.xlsx` (Consolidado + control). Ventas $5,822,295 · Solicitudes 2,658 (incluye 4 de Jiutepec, sin venta). Día: +$84,300 y +74 solicitudes.
 - Jorobas (0449): el valor correcto es 104 solicitudes (dos reportes consecutivos y el control lo confirman); se corrigieron los cortes del 26 y 27, donde había 109 por error de captura.
 - Día hábil 24 de 26 (restan viernes 30 y sábado 31).
+
+## AVIVA BRAIN · Ventas por mes y tienda (29/10/2026)
+
+- Barras apiladas por mes con la venta de cada tienda; desglose por tienda al pasar el cursor o tocar (monto y %). Línea en el 15 de agosto (nueva gestión). Octubre con contorno de proyección al cierre.
+- Filtros: formato; tiendas (todas · mismas tiendas operando desde junio · abiertas antes del 15 de agosto · abiertas desde el 15 de agosto); tienda individual.
+- Comparación antes (promedio mayo–julio) vs. después (septiembre y octubre proyectado), total y por tienda. Fechas de apertura en `STORE_OPEN_DATE` (hoja de Comercial; Río Blanco y Plaza Romos en abril).
