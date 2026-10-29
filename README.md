@@ -331,3 +331,9 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 
 - “Productividad promedio por día” (solicitudes por día hábil) genera el Miércoles de Productividad; colores por solicitudes al día en los tres formatos: verde más de 3, naranja de 2.1 a 3, rojo 2 o menos. “Colocación promedio por día” genera el Ritmo de Colocación.
 - La mejora semanal de solicitudes compara con base de tienda en ambos momentos (evita mezclar la atribución por persona).
+
+## Corte comercial · 28 de octubre de 2026 (cierre del miércoles)
+
+- Fuente: `Corte_28_octubre_2026_ventas_solicitudes.xlsx` (Consolidado + control). Ventas $5,822,295 · Solicitudes 2,658 (incluye 4 de Jiutepec, sin venta). Día: +$84,300 y +74 solicitudes.
+- Jorobas (0449): el valor correcto es 104 solicitudes (dos reportes consecutivos y el control lo confirman); se corrigieron los cortes del 26 y 27, donde había 109 por error de captura.
+- Día hábil 24 de 26 (restan viernes 30 y sábado 31).
