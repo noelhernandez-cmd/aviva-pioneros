@@ -1423,8 +1423,8 @@ var stackState={fmt:'Todos',group:'all',store:'Todas'};
 function stackSet(k,v){stackState[k]=v;if(k!=='store')stackState.store='Todas';renderBrainStack()}
 function stackColor(x,i){var pal=['#026149','#16B877','#0B6B4B','#7AD8B5','#074739','#4DC9A0','#108F8E','#A8E6C8','#2E8B6E','#5FBF8F','#0E7A5C','#C3EED8'];return pal[i%pal.length]}
 function stackMonthVals(x){var D=AVIVA_BRAIN_STORE_DRAFT,months=Object.keys(D).sort(),cut=riskCutoffDate(),cur=cut.slice(0,7),k=x[2]+'|'+x[0];return months.map(function(m){var v=Number((D[m]||{})[x[0]]||0),p=v;if(m===cur&&v){var t=riskStoreTiming(k,cut);if(t.elapsed>0&&t.elapsed<t.total)p=v/t.elapsed*t.total}return {m:m,v:v,p:p,cur:m===cur}}).filter(function(z){return z.v>0})}
-function stackMonName(m){return BRAIN_MONTH_NAMES[m.slice(5)].toLowerCase()}
-function stackComments(stores,single){var out=[],cut=riskCutoffDate(),cur=cut.slice(0,7),mv=function(v){return '$'+Math.round(v).toLocaleString('es-MX')};
+function stackMonName(m){var nm=BRAIN_MONTH_NAMES[String(m||'').slice(5,7)];return nm?nm.toLowerCase():String(m||'')}
+function stackComments(stores,single){if(!stores||!stores.length)return [];var out=[],cut=riskCutoffDate(),cur=cut.slice(0,7),mv=function(v){return '$'+Math.round(v).toLocaleString('es-MX')};
  if(single){var x=stores[0],vals=stackMonthVals(x),ref=BRAIN_META_REF[x[2]],mvt=(AVIVA_BRAIN_MOVEMENTS||[]).filter(function(z){return z.code===x[0]})[0];if(!vals.length)return ['Esta tienda todavía no registra colocación.'];
   var curV=vals.find(function(z){return z.cur}),prev=vals.filter(function(z){return !z.cur}),changeM=null;
   if(mvt){var start=String(x[5]||'').slice(0,10),dep=mvt.departureDate||'',eff=(start&&dep&&start>dep)?start:(dep||start);changeM=eff?eff.slice(0,7):null;out.push('🔄 <b>Cambio de pionero:</b> '+esc(mvt.previous)+(dep?' (salió el '+evoFmtDate(dep)+')':'')+' → '+esc(x[6]||mvt.current||'por asignar')+(start&&start>dep?' (desde el '+evoFmtDate(start)+')':dep?' (a partir de '+stackMonName(dep)+')':'')+'.')}
@@ -1447,7 +1447,7 @@ function stackComments(stores,single){var out=[],cut=riskCutoffDate(),cur=cut.sl
 
 function renderBrainStack(){var box=document.getElementById('brainStackBody');if(!box)return;var S=stackState,D=AVIVA_BRAIN_STORE_DRAFT,months=Object.keys(D).sort(),cut=riskCutoffDate(),cur=cut.slice(0,7);
  var pool=STORE_MASTER.filter(function(x){return S.fmt==='Todos'||x[2]===S.fmt}).filter(function(x){var o=STORE_OPEN_DATE[x[0]]||'2026-04-20';return S.group==='all'||(S.group==='core'?o<='2026-06-30':S.group==='before'?o<STACK_PIVOT:o>=STACK_PIVOT)});
- var stores=S.store==='Todas'?pool:pool.filter(function(x){return x[2]+'|'+x[0]===S.store});var fi={};
+ if(S.store!=='Todas'&&!pool.some(function(x){return x[2]+'|'+x[0]===S.store}))S.store='Todas';var stores=S.store==='Todas'?pool:pool.filter(function(x){return x[2]+'|'+x[0]===S.store});var fi={};
  var data=months.map(function(m){var segs=stores.map(function(x){var v=Number((D[m]||{})[x[0]]||0);fi[x[2]]=(fi[x[2]]||0);return {x:x,v:v}}).filter(function(z){return z.v>0});var tot=segs.reduce(function(a,z){return a+z.v},0),proj=null;if(m===cur){proj=stores.reduce(function(a,x){var v=Number((D[m]||{})[x[0]]||0);if(!v)return a;var t=riskStoreTiming(x[2]+'|'+x[0],cut);return a+(t.elapsed>0&&t.elapsed<t.total?v/t.elapsed*t.total:v)},0)}return {m:m,segs:segs,tot:tot,n:segs.length,proj:proj}});
  var colorOf={};stores.forEach(function(x,i){colorOf[x[0]]=stackColor(x,i)});
  var narrow=(box.clientWidth||800)<600,W=narrow?400:820,H=narrow?360:420,L=narrow?48:70,R=16,T=34,B=40,pw=W-L-R,ph=H-T-B,n=data.length,bw=pw/n*0.62,maxV=Math.max.apply(null,data.map(function(d){return Math.max(d.tot,d.proj||0)}).concat([1]));var step=maxV>4e6?1e6:maxV>2e6?5e5:maxV>8e5?2e5:maxV>3e5?1e5:5e4,top=Math.ceil(maxV*1.1/step)*step,ys=function(v){return T+ph-v/top*ph},xc=function(i){return L+pw/n*(i+0.5)};
