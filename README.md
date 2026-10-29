@@ -344,3 +344,8 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - Filtros: formato; tiendas (todas · mismas tiendas operando desde junio · abiertas antes del 15 de agosto · abiertas desde el 15 de agosto); tienda individual.
 - Comparación antes (promedio mayo–julio) vs. después (septiembre y octubre proyectado), total y por tienda. Fechas de apertura en `STORE_OPEN_DATE` (hoja de Comercial; Río Blanco y Plaza Romos en abril).
 - Lectura rápida automática bajo la gráfica: por tienda (cambio de pionero según `AVIVA_BRAIN_MOVEMENTS` y catálogo, mes en curso vs. meses anteriores, promedio con el pionero actual vs. el anterior, mejor mes, meses en meta de referencia y tendencia); por grupo (mayor aportación, tiendas con su mejor mes, mayor crecimiento y caída en pesos).
+
+## AVIVA BRAIN · Productividad diaria por formato (29/10/2026)
+
+- Solicitudes o colocación por día y formato, calculadas como diferencia entre cortes consecutivos de un día hábil (jueves de descanso; el viernes incluye lo del jueves). Se excluyen cortes parciales (16/10) y los que juntan dos días. Solicitudes sobre los mismos kioscos en ambos cortes.
+- “Día típico de la semana” (promedio por día de la semana, con número de días observados), “Día a día” con marca de lo esperado para ese día, lectura rápida y tabla por formato con meta diaria (kioscos × 4 en WM/SBA, × 3 en Sam’s; colocación = metas ÷ 26). No hay datos por hora.
