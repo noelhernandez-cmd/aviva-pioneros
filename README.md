@@ -340,6 +340,7 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 
 ## AVIVA BRAIN · Ventas por mes y tienda (29/10/2026)
 
-- Barras apiladas por mes con la venta de cada tienda; desglose por tienda al pasar el cursor o tocar (monto y %). Línea en el 15 de agosto (nueva gestión). Octubre con contorno de proyección al cierre.
+- Barras apiladas por mes con la venta de cada tienda; desglose por tienda al pasar el cursor o tocar (monto y %). Barras en tonos de verde Aviva. Octubre con contorno de proyección al cierre (etiqueta con venta actual y proyección).
 - Filtros: formato; tiendas (todas · mismas tiendas operando desde junio · abiertas antes del 15 de agosto · abiertas desde el 15 de agosto); tienda individual.
 - Comparación antes (promedio mayo–julio) vs. después (septiembre y octubre proyectado), total y por tienda. Fechas de apertura en `STORE_OPEN_DATE` (hoja de Comercial; Río Blanco y Plaza Romos en abril).
+- Lectura rápida automática bajo la gráfica: por tienda (cambio de pionero según `AVIVA_BRAIN_MOVEMENTS` y catálogo, mes en curso vs. meses anteriores, promedio con el pionero actual vs. el anterior, mejor mes, meses en meta de referencia y tendencia); por grupo (mayor aportación, tiendas con su mejor mes, mayor crecimiento y caída en pesos).
