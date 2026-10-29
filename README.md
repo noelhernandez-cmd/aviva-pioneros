@@ -348,4 +348,4 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 ## AVIVA BRAIN · Productividad diaria por formato (29/10/2026)
 
 - Solicitudes o colocación por día y formato, calculadas como diferencia entre cortes consecutivos de un día hábil (jueves de descanso; el viernes incluye lo del jueves). Se excluyen cortes parciales (16/10) y los que juntan dos días. Solicitudes sobre los mismos kioscos en ambos cortes.
-- “Día típico de la semana” (promedio por día de la semana, con número de días observados), “Día a día” con marca de lo esperado para ese día, lectura rápida y tabla por formato con meta diaria (kioscos × 4 en WM/SBA, × 3 en Sam’s; colocación = metas ÷ 26). No hay datos por hora.
+- Una sola gráfica: “Día típico de la semana” (promedio de todos los días observados, acumulado entre meses), con filtros de métrica, formato, tienda y Sin EFI / Con EFI. Las fechas del EFI se registran en `EFI_PERIODS` (pendientes). Lectura rápida y tabla con meta diaria (kioscos × 4 en WM/SBA, × 3 en Sam’s; colocación = metas ÷ 26). No hay datos por hora.
