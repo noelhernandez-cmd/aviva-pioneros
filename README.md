@@ -358,3 +358,8 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - Matriz: colocación (proyección del mes vs. meta) contra calidad (FPD; corte 5%, escala raíz para abrir el rango bajo), tamaño = solicitudes por día. Cuadrantes: Referentes, Riesgo de cartera, Cuidadosos, Atención prioritaria y Sin calidad medible (sin FPD o <50% de pagos completados).
 - Puntaje integral: 40% colocación (tope 150%), 40% calidad (100 − FPD×1,000), 20% productividad (tope 1.5× meta diaria). La calidad es por tienda: puede reflejar al pionero anterior si hubo cambio.
 - Filtros de la matriz: mes (incluye “Promedio” de los meses disponibles; el FPD promedio usa solo meses con calidad real, sin repetir septiembre en octubre) (agosto y septiembre con cierre de los archivos de incentivos: % de meta, solicitudes ÷ días hábiles del mes y calidad del mes; octubre con proyección al corte y calidad más reciente), formato y tienda (resalta su punto y la tabla muestra su evolución mensual).
+
+## Corte comercial · 30 de octubre de 2026 (cierre del viernes; jueves 29 sin labores)
+
+- Fuente: `Ventas_y_solicitudes_corte_30_octubre_2026_corregido.xlsx`. Ventas $6,044,495 (+$222,200 el viernes). Solicitudes 2,667 (incluye 4 de Jiutepec): solo +9 en el día, con 36 kioscos sin cambio → captura de solicitudes probablemente no actualizada; se cargan en el acumulado, pero el viernes 30 se excluye del promedio de productividad diaria (`DAILY_REQ_EXCLUDE`).
+- Día hábil 25 de 26 (resta sábado 31).
