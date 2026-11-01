@@ -363,3 +363,15 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 
 - Fuente: `Ventas_y_solicitudes_corte_30_octubre_2026_corregido.xlsx`. Ventas $6,044,495 (+$222,200 el viernes). Solicitudes 2,667 (incluye 4 de Jiutepec): solo +9 en el día, con 36 kioscos sin cambio → captura de solicitudes probablemente no actualizada; se cargan en el acumulado, pero el viernes 30 se excluye del promedio de productividad diaria (`DAILY_REQ_EXCLUDE`).
 - Día hábil 25 de 26 (resta sábado 31).
+
+## Cierre de octubre y apertura de noviembre (01/11/2026)
+
+- Cierre de octubre: `Cierre_octubre_2026_sumas_reales.xlsx`. Se usa la columna **Desembolsos MXN** (cierre real): $6,176,595 (WM $2,277,879 · SBA $2,838,116 · Sam’s $1,060,600) y 2,836 solicitudes (incluye 8 de Jiutepec). Corte 31/10 = día 26 de 26. Las solicitudes del 30 y 31 se excluyen del promedio diario (la captura del 30 estaba incompleta).
+- Power Up HoS octubre: cierre 5 de 10 kioscos activados (50%); San Fco del Rincón 78%, Domingo Diez 65%.
+- Noviembre: `metricCurrentMonth()` = '2026-11' (el tablero abre siempre en el mes vigente; meses anteriores en el selector). Metas por tienda provisionales (`METRIC_MONTH_PROVISIONAL`): las de octubre; Jiutepec, Hospital General y La Cruz $125,000 y Santín $100,000. Sin meta formal de noviembre hasta recibirla (`FORMAL_MONTH_GOALS['2026-11']`).
+
+### Checklist de cambio de mes
+1. Cargar el cierre del mes (desembolsos y solicitudes finales) como último corte del mes.
+2. Guardar el embudo de cierre en `brainFunnelByMonth()` y la calidad del archivo de incentivos en `QUALITY_HISTORY_2026`.
+3. Cambiar `metricCurrentMonth()` y registrar metas por tienda (`METRIC_MONTH_DEFAULT_GOALS`) y formales (`FORMAL_MONTH_GOALS`) del nuevo mes.
+4. Crear las estructuras de cortes diarios del nuevo mes al recibir el primer corte.
