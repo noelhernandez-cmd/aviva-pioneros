@@ -368,7 +368,7 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 
 - Cierre de octubre: `Cierre_octubre_2026_sumas_reales.xlsx`. Se usa la columna **Desembolsos MXN** (cierre real): $6,176,595 (WM $2,277,879 · SBA $2,838,116 · Sam’s $1,060,600) y 2,836 solicitudes (incluye 8 de Jiutepec). Corte 31/10 = día 26 de 26. Las solicitudes del 30 y 31 se excluyen del promedio diario (la captura del 30 estaba incompleta).
 - Power Up HoS octubre: cierre 5 de 10 kioscos activados (50%); San Fco del Rincón 78%, Domingo Diez 65%.
-- Noviembre: `metricCurrentMonth()` = '2026-11' (el tablero abre siempre en el mes vigente; meses anteriores en el selector). Metas por tienda provisionales (`METRIC_MONTH_PROVISIONAL`): las de octubre; Jiutepec, Hospital General y La Cruz $125,000 y Santín $100,000. Sin meta formal de noviembre hasta recibirla (`FORMAL_MONTH_GOALS['2026-11']`).
+- Noviembre: `metricCurrentMonth()` = '2026-11' (el tablero abre siempre en el mes vigente; meses anteriores en el selector). Sin metas de noviembre hasta recibirlas (`METRIC_MONTH_DEFAULT_GOALS['2026-11']` vacío y `FORMAL_MONTH_GOALS['2026-11']` sin registrar; `METRIC_MONTH_PROVISIONAL` marca el mes como pendiente). General y Meta Global muestran “Pendiente” y las tarjetas de ritmo muestran venta acumulada, ritmo diario y proyección en pesos, sin cálculos contra $0.
 
 ### Checklist de cambio de mes
 1. Cargar el cierre del mes (desembolsos y solicitudes finales) como último corte del mes.
