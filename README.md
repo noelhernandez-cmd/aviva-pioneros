@@ -382,3 +382,4 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - La atribución de octubre (Texmelucan → Miguel) aplica solo en octubre. El Power Up HoS muestra su resultado final fuera de octubre.
 - Corte 01/11 (domingo): $165,800 (WM $90,500 · SBA $45,800 · Sam’s $29,500) y 96 solicitudes; 35 kioscos con actividad. Día hábil 1 de 26.
 - **Para cargar un corte nuevo de noviembre basta con agregar un elemento a `MONTH_CUTS['2026-11']`.**
+- Comunicado: mientras las metas del mes sean provisionales (`METRIC_MONTH_PROVISIONAL`), Lunes de Colocación y Ritmo de Colocación no muestran % de meta ni colores de cumplimiento (color neutro), omiten “A acelerar” y “Cerca de su meta”, y las tiendas sin venta aparecen como “Aún sin colocación” en gris. El Miércoles de Productividad conserva sus rangos fijos.
