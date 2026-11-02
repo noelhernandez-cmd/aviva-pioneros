@@ -390,3 +390,9 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - Filtro OLA (según el formato): muestra la línea de la ola, una línea fina por cada tienda que la conforma, la lista de sus tiendas con la venta del último mes cerrado (al tocar una se selecciona) y la tabla con la ola y sus tiendas. El filtro de tienda se limita a la ola. También aplica en la vista por mes calendario.
 - Lectura de la ola (solo con una ola seleccionada y sin tienda): KPIs (tiendas, venta del último mes cerrado, cambios de pionero, meses perdidos), comparación por mes de vida contra las demás olas del formato, conclusiones automáticas (rotación, plazas con potencial demostrado, bajo volumen, pionero estable, mejor/peor tienda, calidad) y desglose por tienda (`brainWaveInsight`).
 - Vista por mes calendario: eje de enero a diciembre del año en curso; opción “Agrupar por” formato u ola. Por ola, cada línea empieza en su mes de apertura con marca de inicio (círculo punteado y ▲ en la tabla). Sin mes repetido en las etiquetas. Con “Todos los formatos”, el cumplimiento se promedia tienda por tienda contra la meta de referencia de su formato.
+
+## Distribución · Mapa de tiendas (03/11/2026)
+
+- Primera vista de la pestaña: mapa de México (estados en SVG embebido, `MX_MAP`, a partir de un GeoJSON público simplificado) con cada kiosco ubicado por su ciudad (`STORE_COORDS`, coordenadas aproximadas).
+- Punto del color del formato con ondas proporcionales a la venta del mes (más grandes y tenues = más venta); punto rojo = sin colocación en el mes. Filtros: formato, vista (México o Centro del país) y mes. Etiquetas de las tiendas con mayor venta e indicadores de tiendas abiertas, estados, colocando y sin colocación.
+- No se usan logotipos de las cadenas (marcas registradas): cada formato tiene su color.
