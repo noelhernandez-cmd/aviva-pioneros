@@ -388,3 +388,4 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 
 - Casilla “Incluir proyección del mes en curso” (marcada por defecto); sin ella, el mes en curso muestra la venta real al corte.
 - Filtro OLA (según el formato): muestra la línea de la ola, una línea fina por cada tienda que la conforma, la lista de sus tiendas con la venta del último mes cerrado (al tocar una se selecciona) y la tabla con la ola y sus tiendas. El filtro de tienda se limita a la ola. También aplica en la vista por mes calendario.
+- Lectura de la ola (solo con una ola seleccionada y sin tienda): KPIs (tiendas, venta del último mes cerrado, cambios de pionero, meses perdidos), comparación por mes de vida contra las demás olas del formato, conclusiones automáticas (rotación, plazas con potencial demostrado, bajo volumen, pionero estable, mejor/peor tienda, calidad) y desglose por tienda (`brainWaveInsight`).
