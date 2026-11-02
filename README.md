@@ -375,3 +375,10 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 2. Guardar el embudo de cierre en `brainFunnelByMonth()` y la calidad del archivo de incentivos en `QUALITY_HISTORY_2026`.
 3. Cambiar `metricCurrentMonth()` y registrar metas por tienda (`METRIC_MONTH_DEFAULT_GOALS`) y formales (`FORMAL_MONTH_GOALS`) del nuevo mes.
 4. Crear las estructuras de cortes diarios del nuevo mes al recibir el primer corte.
+
+## Noviembre 2026 · registro genérico de cortes (02/11/2026)
+
+- Desde noviembre, cada corte se agrega a `MONTH_CUTS['AAAA-MM']` como `{date, sales:{'Formato|kiosco':acumulado}, req:{...}}` (tiendas ausentes = 0). Ese registro alimenta automáticamente: venta y solicitudes del mes (`metricFormatData`), registro de ventas, cortes diarios (Mesa de Riesgos, evolución, comunicados), fecha de corte por defecto, AVIVA BRAIN (mes en curso) y productividad diaria (acumulada entre meses; el día 1 cuenta desde cero).
+- La atribución de octubre (Texmelucan → Miguel) aplica solo en octubre. El Power Up HoS muestra su resultado final fuera de octubre.
+- Corte 01/11 (domingo): $165,800 (WM $90,500 · SBA $45,800 · Sam’s $29,500) y 96 solicitudes; 35 kioscos con actividad. Día hábil 1 de 26.
+- **Para cargar un corte nuevo de noviembre basta con agregar un elemento a `MONTH_CUTS['2026-11']`.**
