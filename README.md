@@ -383,3 +383,8 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - Corte 01/11 (domingo): $165,800 (WM $90,500 · SBA $45,800 · Sam’s $29,500) y 96 solicitudes; 35 kioscos con actividad. Día hábil 1 de 26.
 - **Para cargar un corte nuevo de noviembre basta con agregar un elemento a `MONTH_CUTS['2026-11']`.**
 - Comunicado: mientras las metas del mes sean provisionales (`METRIC_MONTH_PROVISIONAL`), Lunes de Colocación y Ritmo de Colocación no muestran % de meta ni colores de cumplimiento (color neutro), omiten “A acelerar” y “Cerca de su meta”, y las tiendas sin venta aparecen como “Aún sin colocación” en gris. El Miércoles de Productividad conserva sus rangos fijos.
+
+## Desarrollo y crecimiento del canal · filtro por ola y proyección opcional (02/11/2026)
+
+- Casilla “Incluir proyección del mes en curso” (marcada por defecto); sin ella, el mes en curso muestra la venta real al corte.
+- Filtro OLA (según el formato): muestra la línea de la ola, una línea fina por cada tienda que la conforma, la lista de sus tiendas con la venta del último mes cerrado (al tocar una se selecciona) y la tabla con la ola y sus tiendas. El filtro de tienda se limita a la ola. También aplica en la vista por mes calendario.
