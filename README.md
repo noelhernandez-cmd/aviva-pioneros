@@ -408,3 +408,4 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - Mapa: verde ≤ 3%, naranja 3–8%, rojo ≥ 8%; tooltip con pagos completados. Matriz: corte de calidad en 8% con línea de referencia en 3%; puntaje de calidad 100 con FPD 0% y 0 con FPD ≥ 8%; recuadro “Cómo se mide la calidad”.
 - Matriz por mes: octubre se calcula con su cierre real (meta y venta de octubre); “mes en curso” usa la proyección al corte; “Promedio” usa solo meses cerrados.
 - Pendiente de confirmar: los archivos de agosto y septiembre traen 4 letras (A–D) con multiplicadores; la guía describe 3 categorías con puntos.
+- Noviembre: “Inicio en tienda” = 01/11/2026 para las 46 tiendas (`METRIC_MONTH_START_ALL`), todas con mes completo. Octubre conserva sus fechas.
