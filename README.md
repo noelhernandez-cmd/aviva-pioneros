@@ -409,3 +409,8 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - Matriz por mes: octubre se calcula con su cierre real (meta y venta de octubre); “mes en curso” usa la proyección al corte; “Promedio” usa solo meses cerrados.
 - Pendiente de confirmar: los archivos de agosto y septiembre traen 4 letras (A–D) con multiplicadores; la guía describe 3 categorías con puntos.
 - Noviembre: “Inicio en tienda” = 01/11/2026 para las 46 tiendas (`METRIC_MONTH_START_ALL`), todas con mes completo. Octubre conserva sus fechas.
+
+## Calculadora (04/11/2026)
+
+- Se retiran “Ritmo esperado” y “Avance al día” de cada tarjeta (el seguimiento vive en la Mesa de Riesgos). La tarjeta y su PNG terminan en el Objetivo diario (100% y reto); los montos diarios se redondean.
+- Barra al pie de cada tarjeta: “↓ PNG” y “📋 Copiar mensaje” (`calcCardMessage`): meta del mes, objetivo diario, reto y mensaje motivador (con empuje del EFI del 1 al 23 de noviembre). La barra se oculta al exportar el PNG.
