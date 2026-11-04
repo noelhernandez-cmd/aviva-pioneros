@@ -414,3 +414,8 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 
 - Se retiran “Ritmo esperado” y “Avance al día” de cada tarjeta (el seguimiento vive en la Mesa de Riesgos). La tarjeta y su PNG terminan en el Objetivo diario (100% y reto); los montos diarios se redondean.
 - Barra al pie de cada tarjeta: “↓ PNG” y “📋 Copiar mensaje” (`calcCardMessage`): meta del mes, objetivo diario, reto y mensaje motivador (con empuje del EFI del 1 al 23 de noviembre). La barra se oculta al exportar el PNG.
+
+## Calendario EFI · noviembre 2026 (04/11/2026)
+
+- `isRestDay()` centraliza los descansos para todos los cálculos de días hábiles (proyecciones, Mesa de Riesgos, calculadora, productividad diaria, mensajes). Noviembre: descansos 4, 19, 20 y 26 (los jueves 5 y 12 se trabajan) = 26 días hábiles. Demás meses: jueves y 16 de septiembre.
+- EFI: pretemporada 5–12, Buen Fin 13–17 (horario 11:00–20:00, extensión a 22:00 con apoyo de transporte), postemporada 18–23; Cyber Week 24 nov–9 dic. `EFI_PERIODS` = 5–23 de noviembre para el filtro “Sin EFI”. Mensaje de la calculadora con empuje del EFI del 5 al 23.
