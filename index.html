@@ -2219,7 +2219,7 @@ async function downloadCalcCardPNG(btn){
  var tools=card.querySelector('.calc-card-tools'),old=tools?tools.style.display:'';if(tools)tools.style.display='none';
  try{
   var canvas=await html2canvas(card,{scale:3,useCORS:true,backgroundColor:'#ffffff',logging:false,windowWidth:card.scrollWidth,windowHeight:card.scrollHeight});
-  var key=card.dataset.calcKey||'ficha',parts=key.split('|'),name=(parts[1]||'tienda')+'-'+(parts[0]||'formato')+'-objetivo.png';
+  var key=card.dataset.calcKey||'ficha',parts=key.split('|'),sx=STORE_MASTER.find(function(z){return z[2]===parts[0]&&z[0]===parts[1]}),store=sx?commsStore(sx[4]):(parts[1]||'tienda'),mon=BRAIN_MONTH_NAMES[riskCutoffDate().slice(5,7)].toLowerCase(),name=(store.normalize('NFD').replace(/[\u0300-\u036f]/g,'')+'-'+(parts[1]||'')+'-objetivo-'+mon+'.png').replace(/\s+/g,'-');
   var a=document.createElement('a');a.download=name.replace(/[^a-zA-Z0-9._-]+/g,'-');a.href=canvas.toDataURL('image/png',1);document.body.appendChild(a);a.click();a.remove();
  }catch(err){alert('No fue posible generar el PNG. Intenta nuevamente.')}
  finally{if(tools)tools.style.display=old}
