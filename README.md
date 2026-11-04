@@ -401,3 +401,10 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - Metas formales de noviembre (`FORMAL_MONTH_GOALS['2026-11']`): Walmart $5,225,000 · SBA $5,085,000 · Sam’s $2,410,000 = $12,720,000. Mientras no haya metas por tienda, General, Meta Global y las tarjetas de ritmo usan la meta formal por formato (`metricStoreGoalsMissing`); los % por tienda (Mesa de Riesgos, Desempeño, comunicado) esperan las metas por tienda.
 - Metas por tienda de noviembre cargadas (`METRIC_MONTH_DEFAULT_GOALS['2026-11']`, 46 kioscos, $12,720,000) y solicitudes esperadas por tienda (`METRIC_MONTH_STORE_REQ_GOALS['2026-11']`, 5,716), desde `Copia_de_Metas_Noviembre_2026.xlsx` (zonas SBA, WM y SAMS). Se retira el aviso de metas pendientes; la meta ajustada coincide con la formal.
 - Mapa · MOSTRAR: Venta (color por formato, ondas por venta, rojo sin colocación), Calidad (verde FPD ≤ 5%, naranja 5–10%, rojo > 10%, gris sin calidad medible; etiqueta las de calidad regular y mala) y Venta + calidad (ondas por venta con color de calidad; círculo vacío = sin colocación). Tooltip con FPD y calificación. Calidad desde `mxQuality()` (misma regla que la Matriz de desempeño).
+
+## Calidad · reglas oficiales (04/11/2026)
+
+- Fuente: `Calidad_AVIVA_Guia.docx` (Capacitación Incentivos, pp. 11–19). FPD: ≤ 3% primer rango (óptimo), 3–8% intermedio, ≥ 8% último rango (`FPD_GOOD`, `FPD_BAD`). Pagos completados: % de pagos del mes con ≤ 3 días de atraso. Score base 10 con 3 meses: A ≥ 11, B > 7.5 y < 11, C ≤ 7.5; puntos Aviva tu Compra A 30 / B 15 / C 0.
+- Mapa: verde ≤ 3%, naranja 3–8%, rojo ≥ 8%; tooltip con pagos completados. Matriz: corte de calidad en 8% con línea de referencia en 3%; puntaje de calidad 100 con FPD 0% y 0 con FPD ≥ 8%; recuadro “Cómo se mide la calidad”.
+- Matriz por mes: octubre se calcula con su cierre real (meta y venta de octubre); “mes en curso” usa la proyección al corte; “Promedio” usa solo meses cerrados.
+- Pendiente de confirmar: los archivos de agosto y septiembre traen 4 letras (A–D) con multiplicadores; la guía describe 3 categorías con puntos.
