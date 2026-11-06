@@ -419,3 +419,9 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 
 - `isRestDay()` centraliza los descansos para todos los cálculos de días hábiles (proyecciones, Mesa de Riesgos, calculadora, productividad diaria, mensajes). Noviembre: descansos 4, 19, 20 y 26 (los jueves 5 y 12 se trabajan) = 26 días hábiles. Demás meses: jueves y 16 de septiembre.
 - EFI: pretemporada 5–12, Buen Fin 13–17 (horario 11:00–20:00, extensión a 22:00 con apoyo de transporte), postemporada 18–23; Cyber Week 24 nov–9 dic. `EFI_PERIODS` = 5–23 de noviembre para el filtro “Sin EFI”. Mensaje de la calculadora con empuje del EFI del 5 al 23.
+
+## Venta oficial por día y por hora · export de HubSpot (05/11/2026)
+
+- `HUBSPOT_DAILY_SALES` (venta por día y kiosco, 4 abr – 5 nov 18:00, 3,249 desembolsos; cuadra con el cierre de octubre $6,176,595 y el récord del 18/10 $436,489) y `HUBSPOT_HOURLY_SALES` (venta por hora de registro y formato, septiembre a noviembre). `HUBSPOT_EXPORT_AT` marca el corte del export (el día del export puede quedar parcial).
+- Productividad diaria · VISTA: “Día a día” (barras por fecha apiladas por formato, bandas y total por semana lunes–domingo, descansos, EFI, mejor día; periodo últimos 30 días o por mes; filtros de formato y tienda), “Promedio por día de la semana” (colocación con la venta oficial desde octubre; solicitudes con cortes) y “Curva por hora” (% acumulado del día por hora y formato; cuánto deberíamos llevar a cada hora para la meta y en un día típico).
+- Días posteriores al export: se calculan con los cortes diarios. Para refrescar, reemplazar los tres objetos con un nuevo export (ventas-totales-por-mes-pioneros.csv).
