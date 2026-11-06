@@ -434,3 +434,4 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - Filtro “Proyección menor a” de 80% a 10%, de 10 en 10. Botón ▲/▼ para plegar “Ejemplos de acompañamiento” (plegado por defecto) y “Resultados de recuperación”.
 - Evolución semanal con selector de mes propio (no cambia el mes general del tablero).
 - Reconocimientos: “X sueños cumplidos” (número de créditos desembolsados del mes hasta el corte, desde `HUBSPOT_DAILY_CREDITS`, conteo por tienda y día de los exports de HubSpot) bajo la venta en el podio y en cada tienda, y el total del formato en el mensaje de Slack. Octubre: 811 sueños; noviembre al 05/11: 165.
+- Curva por hora con filtros de formato y tienda (`HUBSPOT_HOURLY_STORE_SALES` y `HUBSPOT_HOURLY_STORE_REQ`, distribución por hora de cada tienda desde septiembre). Una tienda se compara contra su formato; un formato contra el total. La tabla (para la meta y día típico) se calcula para la selección.
