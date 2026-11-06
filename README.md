@@ -427,3 +427,9 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - Días posteriores al export: se calculan con los cortes diarios. Para refrescar, reemplazar los tres objetos con un nuevo export (ventas-totales-por-mes-pioneros.csv).
 - Solicitudes oficiales de HubSpot (`HUBSPOT_DAILY_REQ`, por día y kiosco desde abril 2026; `HUBSPOT_HOURLY_REQ`; `HUBSPOT_REQ_EXPORT_AT`), desde `solicitudes-mensuales-pioneros.csv` (octubre = 2,836, cuadra con el cierre). Los cortes de noviembre toman el mayor entre el corte y el acumulado de HubSpot (al 03/11: 348 vs. 134 del corte). Día a día y Curva por hora con selector Colocación / Solicitudes; promedio por día de la semana de solicitudes con la cifra oficial desde octubre.
 - Actualización 06/11: `ventas-totales-por-mes-pioneros_1.csv` (7 oct – 5 nov 20:50, con kiosco). Se toma solo noviembre (cuadra con el resumen oficial: $1,131,900; jueves 5 = $459,500, nuevo récord). Octubre se conserva del export anterior porque el nuevo omite créditos por $53,500 (cierre oficial $6,176,595). Nuevo corte `MONTH_CUTS['2026-11']` al 05/11 con la venta acumulada por tienda; solicitudes del export oficial anterior (al 05/11 18:13).
+
+## Mesa de Riesgos · tarjetas tácticas y vistas (06/11/2026)
+
+- `TACTIC_CARDS` (Capacitación Tarjetas Tácticas: Walmart, Super Bodega Aurrera, Sam's Club). El mensaje de recuperación sugiere 2 tarjetas de su formato según la palanca (solicitudes → Lanza + Red; desembolso → El WhatsApp + Lanza; monto → Red + Lanza) más El Recomendado, con hora, acciones, objetivo y frase; incluye “Dónde estar” y las 3 reglas. La aprobación no se maneja como palanca (se enfoca en solicitudes de calidad).
+- Filtro “Proyección menor a” de 80% a 10%, de 10 en 10. Botón ▲/▼ para plegar “Ejemplos de acompañamiento” (plegado por defecto) y “Resultados de recuperación”.
+- Evolución semanal con selector de mes propio (no cambia el mes general del tablero).
