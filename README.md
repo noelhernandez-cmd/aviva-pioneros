@@ -440,3 +440,8 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - Actualización 08/11: export al 07/11 20:10 (sábado 7 = $497,750 y 84 créditos, nuevo récord). Corte al 07/11: $1,991,850 · 308 sueños · 855 solicitudes. Script de carga reutilizable: `/tmp/merge_hub.py <ventas.csv> <solicitudes.csv> <AAAA-MM-DD>` (noviembre desde el export nuevo; solicitudes toman el mayor por tienda y día desde el 5/11).
 - Mesa de Riesgos: “Evolución semanal por formato” (debajo de la evolución por tienda, mismo selector de mes): Walmart, SBA, Sam’s y total con meta, venta al corte, proyección inicial (primer corte con ≥ 3 días hábiles), proyección al último corte de cada semana (semana en curso marcada), cambio en pp, semana clave y lectura rápida (`renderFormatEvolutionCore`).
 - Actualización 09/11: export al 08/11 20:50 (domingo 8 = $637,990 y 100 créditos, nuevo récord). Corte al 08/11: $2,629,840 · 408 sueños · 1,084 solicitudes.
+
+## Calidad · archivo de riesgo (09/11/2026)
+
+- `QUALITY_HISTORY_2026` ahora viene de `Calidad_Kioscos_v3.xlsx` (hoja df_detail, kioscos tipo Cashi = Aviva tu Compra, agosto–octubre): [FPD, % pagos completados, calificación A–D (kiosk_quality_bucket), multiplicador (n/d), primeros pagos (muestra), % straight rollers]. Las 46 tiendas cruzan por nombre + sufijo (WM, SAM, BA/SBA).
+- Calidad medible con 10 o más primeros pagos (`qMeas`); `mxQuality` toma octubre y, si no es medible, septiembre o agosto. Matriz, mapa y lectura de la ola usan esta fuente. Octubre: 32 tiendas con calidad medible; mediana de FPD 8.1%.
