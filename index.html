@@ -2283,7 +2283,7 @@ const TACTIC_CARDS={
   donde:'10:30 pasillos y electrónica · 12:00 pasillos y cajas · 3:00 pasillos y electrónica · 5:00 cajas y pasillos · 7:00 cajas'}};
 const TACTIC_RECOMENDADO={n:'El Recomendado',tipo:'Semilla',h:'Al cerrar cada venta',a:'Felicita al cliente, pídele que guarde tu contacto y mándale su bienvenida, videos, tabla y liga de pagos; pídele dos recomendados con nombre y teléfono.',o:'2 recomendados por cada venta',f:''};
 function tacticCardsFor(fmt,lever,ratio){var T=TACTIC_CARDS[fmt]||TACTIC_CARDS.Walmart,k=lever==='desembolso'?['whatsapp','lanza']:lever==='monto'?['red','lanza']:(ratio!=null&&ratio>=1)?['whatsapp','red']:['lanza','red'];return k.map(function(z){return T[z]}).concat([TACTIC_RECOMENDADO])}
-function tacticCardText(c,i){return (i+1)+'. 🃏 *'+c.n+'* ('+c.tipo+' · '+c.h+')\n'+c.a+'\n🎯 Objetivo: '+c.o+(c.f?'\n💬 Lo que dices: '+c.f:'')}
+function tacticCardText(c,i){return (i+1)+'. *'+c.n+'* ('+c.tipo+' · '+c.h+')\n'+c.a+'\n🎯 Objetivo: '+c.o+(c.f?'\n💬 Lo que dices: '+c.f:'')}
 // Mensaje corto de acompañamiento (Mesa de Riesgos): avance, ayer, meta de hoy, prioridad y 3 tarjetas.
 function riskShortMessage(r,mode){var name=String(r.x[6]||'Pionero').trim().split(/\s+/)[0],fmt=String(r.x[2]||''),tacFmt=fmt.toLowerCase().includes('sam')?'Sam’s':fmt.toLowerCase().includes('walmart')?'Walmart':'SBA',md=riskMessageDate(),iso=md.getFullYear()+'-'+String(md.getMonth()+1).padStart(2,'0')+'-'+String(md.getDate()).padStart(2,'0'),cut=riskCutoffDate(),mk=cut.slice(0,7),id=r.x[0],wd=['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
  if(isRestDay(md))return '🐆 ¡'+name+'! Hoy es tu día de descanso. Disfrútalo; mañana retomamos con todo.';
@@ -2300,8 +2300,7 @@ function riskShortMessage(r,mode){var name=String(r.x[6]||'Pionero').trim().spli
  var lever=sf&&sf.lever?sf.lever.k:null,pend=sf?sf.pending:0;
  L.push('🔥 Tu prioridad: '+(lever==='desembolso'?'cerrar tus '+pend+' aprobado'+(pend===1?'':'s')+' pendiente'+(pend===1?'':'s')+' (hoy desembolsas '+Math.round(sf.acc*100)+'% contra '+Math.round(sf.bds*100)+'% de '+fmt+').':lever==='monto'?'subir tu monto promedio ('+money(Math.round(sf.ticket))+' contra '+money(Math.round(sf.bt))+' de '+fmt+') cuando el cliente lo necesite.':lever==='solicitudes'||(r.proj<80&&!lever)?'abordar más: ningún bloque sin clientes abordados.':'mantener tu ritmo y que ningún aprobado se quede sin seguimiento.'));
  var cards=tacticCardsFor(tacFmt,lever,null).slice(0,3);
- L.push('✅ Qué hacer hoy:\n'+cards.map(function(c,i){var act=c.n==='El WhatsApp'&&pend?'escribe a tus '+pend+' aprobados pendientes y agenda su visita':c.o.charAt(0).toLowerCase()+c.o.slice(1);return (i+1)+'. 🃏 *'+c.n+'* ('+c.h+'): '+act+'.'}).join('\n'));
- var lz=cards.find(function(c){return c.f});if(lz)L.push('💬 '+lz.f);
+ L.push('✅ *Qué hacer hoy:*\n\n'+cards.map(tacticCardText).join('\n\n'));
  L.push('💪 ¡Vamos por un gran día!');
  return L.join('\n\n')}
 
