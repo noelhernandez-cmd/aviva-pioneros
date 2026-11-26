@@ -482,3 +482,11 @@ Replica el dashboard "Aviva tu Compra · Pioneros" (y sus vistas SBA, Walmart y 
 - Monto: `amount_in_home_currency`. Tienda: propiedad `kiosco` (las 47 etiquetas de Pioneros, por ejemplo "#0023 - CHA BA", "#0413 - PCH SBA", "#0446 - TUL SAM").
 - Primer crédito = toda solicitud nueva hecha en el kiosco, aunque el cliente ya haya tenido créditos (por ejemplo, "4º Crédito" sin flujo de renovación). Se excluyen las renovaciones: `camino_de_renovacion` con valor (y `aos_session_renewal_link` con valor), que son del equipo de renovaciones.
 - Validación: 23/11 = 29 créditos y $162,800 (33 en HubSpot menos 4 renovaciones); 24/11 = 28 créditos y $146,700 (26 de "1º Crédito" más 2 solicitudes nuevas de clientes recurrentes). Coincidencia exacta de montos y horas (a 10 minutos) contra el export.
+
+### Actualización de la regla (26/11/2026, validación del mes)
+- Venta = etapas **Desembolso (1341580187) + Pagado (1341580189)**. Un crédito liquidado sigue siendo venta. **No cuentan**: Cancelado (1341580192), Precancelación (1341580191), Error en desembolso, ni etapas previas.
+- Leer **el mes completo en cada actualización** (instrucción del usuario: "actualiza nuestro sitio web"), para que las cancelaciones de días anteriores salgan de la venta.
+- Consulta de ventas: `GROUP BY kiosco, DATE_TRUNC(closedate,'DAY')` con `closedate >= 'AAAA-MM-01'`; ignorar los grupos con fecha fuera del mes. No usar `closedate = 'AAAA-MM-DD'` (usa otra zona horaria y desordena las tiendas por día).
+- Filtro de kioscos: `kiosco LIKE '%SBA%' OR '%WM%' OR '%SAM%'` más los 8 con etiqueta "BA": #0023 - CHA BA, #0274 - TUX BA, #0275 TUL - BA, #0276 IXM - BA, #0277 HUA BA, #0278 TLX BA, #0279 RIB - BA, #0414 - ATL BA. Excluir renovaciones con `camino_de_renovacion IS NULL`.
+- Solicitudes: `createdate` del pipeline 890269050, mismos kioscos, sin renovaciones (cuentan todas las etapas, incluidas rechazadas). Validado por tienda: 23/11 = 95 y 24/11 = 85, exactos.
+- Validación de ventas del 1 al 24/11: 23 de 24 días exactos; total HubSpot $8,474,390 contra $8,469,390 del export (+1 crédito de $5,000 el 11/11, pendiente de identificar).
