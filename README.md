@@ -474,3 +474,11 @@ Cada formato representa una fuerza (Walmart · Esfuerzo, SBA · Superación, Sam
 - 25/11: corte al 24/11 (martes 24 = $146,700 y 28 créditos). Comunicados: “Los que más subieron” solo incluye mejoras reales (al menos una décima ya redondeada) y los kioscos especiales (Perote) no entran al mensaje.
 - 25/11: Alfredo del Mazo (Sam’s, 0445) vacante en noviembre por baja de Javier Cruz (última actividad 15/11). Sale del podio y de la Mesa de Riesgos; aparece como vacante en el ranking y en el mensaje.
 - 26/11: nueva pestaña "11 · Recuperación Calidad". Grupo fijo: tiendas con calificación C o D en octubre (archivo de riesgos): 10 tiendas (7 SBA, 2 Sam's, 1 Walmart). Muestra agosto a febrero; los meses nuevos se agregan en QUALITY_HISTORY_2026[id][mes]. Fecha del curso en QUALITY_RECOVERY.course (y por tienda en QUALITY_RECOVERY.byStore). Estado contra octubre: Recuperada (A/B), Mejorando (FPD −2 pts), Empeoró (+2 pts), Sin cambio; meses con menos de 10 créditos no cuentan.
+
+## Fuente HubSpot (conector) · regla validada el 26/11/2026
+Replica el dashboard "Aviva tu Compra · Pioneros" (y sus vistas SBA, Walmart y Sam's):
+- Objeto DEAL, pipeline 890269050, etapa `dealstage = 1341580187` (Desembolso).
+- Fecha de venta: `closedate` convertida a hora de México (UTC−6). Un día D va de D 06:00 UTC a D+1 06:00 UTC. No usar `fecha_de_desembolso` (viene vacía en muchos créditos).
+- Monto: `amount_in_home_currency`. Tienda: propiedad `kiosco` (las 47 etiquetas de Pioneros, por ejemplo "#0023 - CHA BA", "#0413 - PCH SBA", "#0446 - TUL SAM").
+- Primer crédito = toda solicitud nueva hecha en el kiosco, aunque el cliente ya haya tenido créditos (por ejemplo, "4º Crédito" sin flujo de renovación). Se excluyen las renovaciones: `camino_de_renovacion` con valor (y `aos_session_renewal_link` con valor), que son del equipo de renovaciones.
+- Validación: 23/11 = 29 créditos y $162,800 (33 en HubSpot menos 4 renovaciones); 24/11 = 28 créditos y $146,700 (26 de "1º Crédito" más 2 solicitudes nuevas de clientes recurrentes). Coincidencia exacta de montos y horas (a 10 minutos) contra el export.
