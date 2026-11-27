@@ -520,3 +520,7 @@ Replica el dashboard "Aviva tu Compra · Pioneros" (y sus vistas SBA, Walmart y 
 - Nuevo filtro **DÍA DEL COMUNICADO** (por defecto "Hoy · automático"): lunes → Lunes de Colocación, miércoles → Miércoles de Productividad, cualquier otro día → Ranking general al momento. Se puede forzar cualquier opción; el criterio sigue editable.
 - Nuevo criterio **Ranking general · al momento** (`recognitionMetric=general`): usa la colocación acumulada del mes (igual que Colocación) pero con título neutro, sin comparar contra la semana anterior ("Así nos fue esta semana", "Los que más colocaron", "Sin colocación nueva"), con los días hábiles que quedan y un cierre de impulso. Imagen: `Ranking_General_<formato>_<corte>.png`.
 - El texto del mensaje excluye los kioscos de cobertura (Perote); la imagen sí los muestra, por lo que el total de la imagen puede ser mayor que el del texto.
+
+### Recuperación Calidad v2 (27/11/2026)
+- Ahora lista **todas las tiendas con calificación** (46; Perote no tiene). Filtros: Formato, Tienda, Calificación del último mes (A/B/C/D) y Mostrar (todas, por recuperar o en A/B). "Por recuperar" = C o D en el último mes medido; el grupo del curso sigue siendo el de C o D en octubre (estado contra octubre). Las tiendas que caen a C o D fuera del grupo salen como "Nueva alerta".
+- Debajo de cada mes: colocación y % de meta (historial de incentivos; noviembre al corte). Meses sin créditos medidos: "Sin muestra"; meses sin archivo: "Pendiente".
