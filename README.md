@@ -498,3 +498,20 @@ Replica el dashboard "Aviva tu Compra · Pioneros" (y sus vistas SBA, Walmart y 
 - Tablero: panel "📞 Aprobados por recuperar" en la Mesa de Riesgos; la ficha, el mensaje y la palanca de cada tienda mencionan cuántos son de las últimas 72 h. No se publican nombres ni teléfonos de clientes (sitio público).
 - Calidad (FPD) NO sale de HubSpot: los campos del primer pago (monto pagado, fecha real, atraso) vienen vacíos; sigue viniendo del archivo de riesgos que carga el usuario.
 - Validación 27/11: totales por etapa de la transcripción = HubSpot (excepto 1 rechazado de $5,000 llegado entre consultas). Contra el archivo del 16/11: Santín exacto (0.77 · 27 · 22 · $166,000), resto dentro de 0 a 9 créditos.
+
+## Procedimiento "actualiza nuestro sitio web" (HubSpot, desde 27/11/2026)
+1. **Ventas del mes completo**: `SELECT DATE_TRUNC(closedate,'DAY'), COUNT(*), SUM(amount_in_home_currency)` con etapas Desembolso + Pagado, sin renovaciones, `closedate >= '<1° del mes>'`. Comparar contra los totales diarios del tablero: solo se corrigen los días que difieran (cancelaciones o créditos nuevos). Para ver tienda por día usar `GROUP BY kiosco, DATE_TRUNC(closedate,'DAY')` con un rango de fechas `>= / <=`.
+2. **Solicitudes**: totales por día (`DATE_TRUNC(createdate,'DAY')`) para detectar cambios y `GROUP BY kiosco, DATE_TRUNC(createdate,'DAY')` para los días nuevos (pipeline 890269050, sin renovaciones).
+3. **Horas de los créditos nuevos**: `search_crm_objects` con filtros `kiosco IN (...)`, `dealstage IN (D,P)` y `closedate BETWEEN`. La consulta SQL por registros devuelve filas incompletas: no usarla.
+4. Armar el parche JSON (formato en `tools/hub_apply.py`) y aplicarlo: `python3 tools/hub_apply.py parche.json`. Recalcula los cortes acumulados del mes completo (MONTH_CUTS).
+5. **Embudo**: `tools/merge_funnel.py` (ver sección anterior).
+6. Correr la prueba con jsdom, commit, push a main, copiar a outputs y publicar el artifact.
+- Trampas: (a) una consulta SQL idéntica devuelve el resultado en caché; cambiar el `LIMIT` para forzar datos nuevos. (b) `closedate = 'AAAA-MM-DD'` agrupa por kiosco con otra frontera de día que `DATE_TRUNC`; usar siempre `DATE_TRUNC`. (c) Máximo 50 grupos de filtro: no combinar varios filtros OR de etapa con los de kiosco.
+- Corte oficial = último día hábil completo. Días de descanso (26/11) y el día en curso no son corte.
+
+### Actualización 27/11/2026
+- Corte 25/11 (miércoles): $8,498,390 (66.8% de $12,720,000) y 1,385 sueños. SBA $4,518,190 (88.9%), Walmart $2,869,400 (54.9%), Sam’s $1,110,800 (46.1%).
+- Cambios en días anteriores: 11/11 +1 crédito de $5,000 de Santín (0443); 25/11 completo (5 créditos, $24,000, 42 solicitudes); 26/11 descanso (1 solicitud). Los cortes acumulados del mes se recalcularon (Perote 0496 ya aparece en los cortes del 14 y 15).
+- Miércoles 25: 42 solicitudes y 5 créditos en Pioneros (−51% y −82% vs. martes 24); toda la red de Aviva bajó 31% en solicitudes. Con eso, 17 de 21 tiendas en riesgo salen “sin colocación ni solicitudes” en el mensaje.
+- Embudo al 27/11: 426 aprobados pendientes del mes ($3,163,890) y 17 de las últimas 72 horas ($159,000) en 11 tiendas.
+- Diferencias menores sin corregir: solicitudes del 9 (+1) y del 11 (+2) en HubSpot contra el tablero.
