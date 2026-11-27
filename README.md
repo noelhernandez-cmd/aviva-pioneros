@@ -515,3 +515,8 @@ Replica el dashboard "Aviva tu Compra · Pioneros" (y sus vistas SBA, Walmart y 
 - Miércoles 25: 42 solicitudes y 5 créditos en Pioneros (−51% y −82% vs. martes 24); toda la red de Aviva bajó 31% en solicitudes. Con eso, 17 de 21 tiendas en riesgo salen “sin colocación ni solicitudes” en el mensaje.
 - Embudo al 27/11: 426 aprobados pendientes del mes ($3,163,890) y 17 de las últimas 72 horas ($159,000) en 11 tiendas.
 - Diferencias menores sin corregir: solicitudes del 9 (+1) y del 11 (+2) en HubSpot contra el tablero.
+
+### Reconocimientos: filtro por día y "Ranking general al momento" (27/11/2026)
+- Nuevo filtro **DÍA DEL COMUNICADO** (por defecto "Hoy · automático"): lunes → Lunes de Colocación, miércoles → Miércoles de Productividad, cualquier otro día → Ranking general al momento. Se puede forzar cualquier opción; el criterio sigue editable.
+- Nuevo criterio **Ranking general · al momento** (`recognitionMetric=general`): usa la colocación acumulada del mes (igual que Colocación) pero con título neutro, sin comparar contra la semana anterior ("Así nos fue esta semana", "Los que más colocaron", "Sin colocación nueva"), con los días hábiles que quedan y un cierre de impulso. Imagen: `Ranking_General_<formato>_<corte>.png`.
+- El texto del mensaje excluye los kioscos de cobertura (Perote); la imagen sí los muestra, por lo que el total de la imagen puede ser mayor que el del texto.
